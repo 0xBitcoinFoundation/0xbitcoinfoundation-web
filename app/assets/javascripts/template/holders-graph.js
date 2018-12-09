@@ -105,6 +105,10 @@ function isExchange(address) {
     address:'0xe03c23519e18d64f144d2800e30e81b0065c48b5',
     name: 'Mercatox 2'
   },
+  {
+    address:'0x701564aa6e26816147d4fa211a0779f1b774bb9b',
+    name: 'Uniswap 0xBTC'
+  },
 ];
 
   for(var i = 0; i < exchanges.length; i++) {
