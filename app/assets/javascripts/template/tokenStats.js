@@ -25,14 +25,14 @@ init()
 }
 
 
-async getAPIData()
-{
-  return new Promise((resolve, reject) => {
-    $.getJSON('http://api.0xbtc.io', function(data) {
-      resolve(data);
-    });
-  });
-}
+//async getAPIData()
+//{
+//  return new Promise((resolve, reject) => {
+//    $.getJSON('http://api.0xbtc.io', function(data) {
+//      resolve(data);
+//    });
+//  });
+//}
 
 
 }
