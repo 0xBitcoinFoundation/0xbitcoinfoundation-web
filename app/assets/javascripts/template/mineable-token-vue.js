@@ -1,4 +1,5 @@
 const hashrateGraph = require("./hashrate-graph");
+const holdersGraph = require("./holders-graph");
 const tokenABI = require("./abi");
 const Eth = require('./ethjs');
 const $ = require('jquery');
@@ -30,7 +31,7 @@ function to_readable_thousands(number, unit_type, decimal_count) {
 
 
 var mineable_token = new Vue({
-  el: '#mineable-token-stats',
+  el: '#aboutUs',
   data: {
     address: null,
     _eth: null,
@@ -97,9 +98,9 @@ var mineable_token = new Vue({
   },
   methods: {
     updateHashrateGraph: function () {
-      let SECONDS_PER_ETH_BLOCK = 15;
-      let GRAPH_HISTORY_DAYS = 120;
-      let GRAPH_NUM_POINTS = 12;
+      let SECONDS_PER_ETH_BLOCK = 14;
+      let GRAPH_HISTORY_DAYS = 30;
+      let GRAPH_NUM_POINTS = 30;
       this._eth.blockNumber().then((result) => {
         let current_eth_block = parseInt(result.toString(10));
         let earliest_eth_block = current_eth_block - (GRAPH_HISTORY_DAYS * 24 * 3600 / SECONDS_PER_ETH_BLOCK);
@@ -230,6 +231,10 @@ var mineable_token = new Vue({
       $.getJSON('https://api.ethplorer.io/getAddressInfo/'+this.address+'?apiKey=freekey',
                 (result) => {this.contract_operations = result["countTxs"]});
       this.updateHashrateGraph();
+      this.callHoldersGraph();
     },
+    callHoldersGraph: function() {
+      this._token.tokensMinted().then((result) => {holdersGraph.showHoldersGraph(parseInt(result[0].toString(10)) / (10 ** this.decimals))});
+    }
   }
 })

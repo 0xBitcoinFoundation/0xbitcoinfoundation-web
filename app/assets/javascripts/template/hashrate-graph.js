@@ -5,23 +5,25 @@ call showHashrateGraph(...) to apply graph to canvas with ID 'chart-hashrate'
 NOTE: assumes mineable_token vue exists in the global scope
  */
 
-const Chart = require('./chart.min');  
+const Chart = require('./chart.min');
 const Eth = require('./ethjs');
 
 /* color of the fonts used in chart labels */
-Chart.defaults.global.defaultFontColor = '#ffffff';
+Chart.defaults.global.defaultFontColor = '#0059a2';
 Chart.defaults.global.hover.mode = 'nearest';
 /* color of thehashrate line */
-let chart_line_border_color = '#ffc287';
+let chart_line_border_color = '#ff7f00';
 /* color of the fill under hashrate line */
-let chart_line_background_color = '#ffab58';
+let chart_line_background_color = '#e0ffd4';
 /* color of the chart gridlines */
-let gridline_color = '#ffffff';
+let gridline_color = '#cce3fa';
 /* color of the first chart gridline */
-let gridline_zero_color = '#ffffff';
+let background_color = '#ffffff';
+/* color of the first chart gridline background */
+let gridline_zero_color = '#08223b';
 /* axis label options */
-let y_axis_label_color = '#ffffff';
-let axis_label_font_size = 13;
+let y_axis_label_color = '#ff7f00';
+let axis_label_font_size = 14;
 
 
 /* intrinsic values */
@@ -75,11 +77,11 @@ function toReadableHashrateForLogScale(hashrate, should_add_b_tags) {
   }
   for (var exp=0; exp < 3; exp++) {
     if(0
-       //||hashrate == 1*10**exp
-       //||hashrate == 2*10**exp
-       //|| hashrate == 3*10**exp
+       || hashrate == 1*10**exp
+       || hashrate == 2*10**exp
+       || hashrate == 3*10**exp
        || hashrate == 4*10**exp
-       //|| hashrate == 5*10**exp
+       || hashrate == 5*10**exp
        || hashrate == 6*10**exp
        || hashrate == 7*10**exp
        || hashrate == 8*10**exp
@@ -97,11 +99,11 @@ function toReadableHashrateForLogScale(hashrate, should_add_b_tags) {
   return hashrate_string + ' ' + final_unit + ' ';
 }
 
-/* 
+/*
     Function generator. Takes the most recent eth block and returns a function
     which can be used to convert eth blocks to date strings.
 
-    Use it (and current time) to guess timestamp of a given past eth block. 
+    Use it (and current time) to guess timestamp of a given past eth block.
     Value is returned as a formatted date/time string.
  */
 function createEthDateFunction(current_eth_block) {
@@ -440,7 +442,7 @@ function generateHashrateGraph(eth, max_target_bn, ideal_block_time_seconds, tar
 
     data: {
         datasets: [{
-            label: "Network Hashrate",
+            label: "Current Estimated Hashrate",
             showLine: true,
             backgroundColor: chart_line_background_color,
             borderColor: chart_line_border_color,
@@ -452,7 +454,7 @@ function generateHashrateGraph(eth, max_target_bn, ideal_block_time_seconds, tar
 
     options: {
       legend: {
-        display: false,
+        display: true,
       },
       tooltips: {
         intersect: false,
@@ -493,8 +495,8 @@ function generateHashrateGraph(eth, max_target_bn, ideal_block_time_seconds, tar
         yAxes: [{
           id: 'first-y-axis',
           position: 'left',
-          //type: 'linear',
-          type: 'logarithmic',
+          type: 'linear',
+          //type: 'logarithmic',
           gridLines: {
             color: gridline_color,
             zeroLineColor: gridline_zero_color,

@@ -10,7 +10,7 @@ constructor(Eth)
   init()
 {
   console.log('Loading fundraiser')
-  this.loadFundraiserData();
+//  this.loadFundraiserData();
 
 }
 
@@ -35,19 +35,19 @@ constructor(Eth)
 
 }
 
-   loadFundraiserData() {
-    let element_id = "fundraiser-progress-bar";
-    let address = "0xc22E34923F14f1663DdAB4956F92784DD4FE360a";
-    let name = "CCN Donation Fund";
-    let goal_balance_eth = 9;
-    this.getEthBalance(address).then((result) => {
-        return 100 * Number(this.Eth.fromWei(result, "ether")) / goal_balance_eth
-    }).then((result) => {
-        this.moveProgressBar(result, element_id)
-    }).catch((error) => {
-        console.log("err", error)
-    });
-}
+//   loadFundraiserData() {
+//    let element_id = "fundraiser-progress-bar";
+//    let address = "0xc22E34923F14f1663DdAB4956F92784DD4FE360a";
+//    let name = "CCN Donation Fund";
+//    let goal_balance_eth = 9;
+//    this.getEthBalance(address).then((result) => {
+//        return 100 * Number(this.Eth.fromWei(result, "ether")) / goal_balance_eth
+//    }).then((result) => {
+//        this.moveProgressBar(result, element_id)
+//    }).catch((error) => {
+//        console.log("err", error)
+//    });
+//}
 
 
 

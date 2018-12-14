@@ -27,53 +27,50 @@ Front-end developer : Mamunur Rashid
 
 
 ==================================================================*/
-
 /*====================================================================
 1. Base CSS Start
 ======================================================================*/
-
 /*--Google Font Import--*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+// @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+//@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+* {
+  -webkit-transition: all 1s;
+}
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    line-height: normal;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: normal;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 body {
-    font-weight: 400;
-    color: #131313;
+  font-weight: 400;
+  color: #131313;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0
+  list-style: none;
+  margin: 0;
+  padding: 0
 }
 
-a,
-a:visited,
-a:focus,
-a:active,
-a:hover {
-    text-decoration: none;
-    outline: none;
+a {
+  color: #000;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 a,
 button {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-a {
-    color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 h1,
@@ -86,1610 +83,1681 @@ h1,
 .h1,
 .h2,
 .h3 {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
 }
 
 h1 {
-    font-size: 60px;
-    color: #1a243e;
-    font-weight: 600;
-    font-family: 'Exo', sans-serif;
+  font-size: 55px;
+  color: #090211;
+  font-weight: 500;
+  // font-family: 'Exo', sans-serif;
 }
 
 h2 {
-    font-size: 40px;
-    color: #131313;
-    font-weight: 600;
-    font-family: 'Exo', sans-serif;
+  font-size: 45px;
+  color: #000;
+  font-weight: 600;
+  // font-family: 'Exo', sans-serif;
 }
 
 h3 {
-    font-size: 22px;
-    color: #ff7f00;
+  font-size: 22px;
+  color: #000;
 }
 
 h4 {
-    font-size: 18px;
+  font-size: 16px;
+  color: #fbfbfb;
+  font-weight: 600;
+  text-shadow: -1px 0 #9e9e9e, 0 1px #9e9e9e, 1px 0 #9e9e9e, 0 -1px #9e9e9e;
+//  font-style: italic;
 }
 
 p {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #000000;
-    margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 0px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
 }
 
 a {
-    margin-bottom: 0px;
-    font-weight: 600;
-    font-family: 'Exo', sans-serif;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+  margin-bottom: 0px;
+  font-weight: 600;
+  // font-family: 'Exo', sans-serif;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .margin-0 {
-    margin: 0
+  margin: 0
 }
 
 .form-control {
-    border: 1px solid #ff7f00;
-    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset;
-    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
-    border-radius: 2px;
+  border: 1px solid #ff7f00;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset;
+  box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+  border-radius: 2px;
 }
 
 .form-control:focus {
-    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+  box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
 }
 
 .modal {
-    z-index: 9999999;
-    background: rgba(0, 0, 0, 0.49);
+  z-index: 9999999;
+  background: rgba(0, 0, 0, 0.49);
 }
 
 .affix {
-    width: 100%;
+  width: 100%;
 }
 
 #map {
-    width: 100%;
-    height: 725px;
+  width: 100%;
+  height: 725px;
 }
 
 .sectionSeparator {
-    height: 5px;
-    width: 100px;
-    background: #ff7f00;
-    display: inline-block;
-    margin: 0px 0px 5px;
-
+  height: 5px;
+  width: 100px;
+  background: #ff7f00;
+  display: inline-block;
+  margin: 0px 0px 5px;
 }
-
 
 /*=================================================
 2. Site Preloader Css Start
 ===================================================*/
 .site-preloader {
   background: #ff7f00;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999999;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
 }
 
 .site-preloader .spinner {
-    width: 60px;
-    height: 60px;
-    margin: 21% auto;
-    background-color: #fff;
-    border-radius: 100%;
-    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-    animation: sk-scaleout 1.0s infinite ease-in-out;
+  width: 60px;
+  height: 60px;
+  margin: 21% auto;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
 }
 
 @-webkit-keyframes sk-scaleout {
-    0% {
-        -webkit-transform: scale(0)
-    }
+  0% {
+    -webkit-transform: scale(0)
+  }
 
-    100% {
-        -webkit-transform: scale(1.0);
-        opacity: 0;
-    }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
 }
 
 @keyframes sk-scaleout {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
 
-    100% {
-        -webkit-transform: scale(1.0);
-        transform: scale(1.0);
-        opacity: 0;
-    }
-}
-
-/* ================================================
-4. Main Menu Area Start
-===================================================*/
-
-.support-bar-area {
-  display: none;
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
 }
 
 header.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background: #ff7f00;
-    width: 100%;
-    padding: 10px 0px 10px;
-    border-bottom: 0px solid rgba(255, 255, 255, 0.25);
-
-}
-
-.navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 225, 225, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.navbar-light .navbar-toggler:focus {
-    color: #000000;
-    outline: 0px;
-}
-
-#mainHeader .navbar-brand {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 30px;
-    font-family: 'Exo', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: transparent;
+  width: 100%;
+  padding: 0 0px 0px;
+  border-bottom: 0px solid rgba(255, 255, 255, 0.25);
 }
 
 #mainHeader.header.stiky {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #000;
+  border-bottom: 0px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================================
+4. Main Menu header Area & navbar Start
+===================================================*/
+// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 800px;
+$nav-height: 65px;
+$nav-background: transparent;
+$nav-font-color: #fff;
+$link-hover-color: #2582dd;
+
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: transparent;
+}
+
+// Logo and branding
+.brand {
+  color: #ffffff;
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+// Navigation
+nav {
+  float: right;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 5;
+
+    li {
+      float: left;
+      position: relative;
+
+      a,
+      a:visited {
+        display: block;
+        padding: 0 20px;
+        line-height: $nav-height;
+        background: $nav-background;
+        color: $nav-font-color;
+        text-decoration: none;
+
+        &:hover {
+          background: $link-hover-color;
+          color: $nav-font-color;
+        }
+
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
+        }
+      }
+
+      // Dropdown list
+      ul li {
+        min-width: 190px;
+
+        a {
+          background: #000;
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  height: $nav-height;
+  width: $nav-height;
+}
+
+@media only screen and (max-width: 800px) {
+
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
     width: 100%;
-    z-index: 9999;
-    background: #131313;
-    border-bottom: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 0 0 0px;
+
+    ul {
+      display: none;
+
+      li {
+        background: #ff7f00;
+        float: none;
+
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
 }
 
-#mainHeader.header .nav-link {
-    color: #ffffff;
-    font-size: 15px;
-    margin-right: 10px;
-    text-transform: uppercase;
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
 }
 
-#mainHeader.header .nav-link.active {
-    color: #ffffff;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 10px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+
+  span:before {
+    top: -10px;
+  }
+
+  span:after {
+    bottom: -10px;
+  }
+
+  &.active span {
+    background-color: transparent;
+
+    &:before,
+    &:after {
+      top: 0;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
-#mainHeader.header .nav-link:hover {
-    color: #272727;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+// Page content
+article {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-#mainHeader.header .nav-item:last-child .nav-link {
-    margin-right: 0px;
-    padding-right: 0px;
-}
-
-#mainHeader .navbar-light .navbar-toggler {
-    color: #ff7f00;
-    border: 0px;
-}
-
-#mainHeader .viewPlan a {
-    width: 140px;
-    height: 50px;
-    display: inline-block;
-    border: 2px solid #fff;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-left: 185px;
-    border-radius: 4px;
-}
-
-
-#mainHeader .viewPlan a:hover {
-    background: #fff;
-    border-color: #fff;
-    color: #ffffff;
-}
-
-
-/* ==============================================
-Main Menu Area Start
-================================================== */
-
-
-
+/* ================================================
+4. Main Menu header Area & navbar End
+===================================================*/
 /* =============================================
-5. Welcome Area Start
+5. Welcome Area links Start
 ================================================ */
-
 #welcomeArea {
-    background: #c5cbd2 url(../img/homebg.png) no-repeat top;
-
+  background: #ff7f00;
 }
 
 #welcomeArea .topcontent {
-    padding: 75px 0px 75px;
+  padding: 75px 0px 75px;
 }
 
 #welcomeArea .topcontent .sectionSeparator {
-    margin: 5px 0px 9px;
+  margin: 5px 0px 9px;
 }
 
 #welcomeArea .topcontent h1 {
-    color: #131313;
+  color: #131313;
 }
 
 #welcomeArea .topcontent p {
-    display: block;
-    color: #131313;
-    padding: 0px 75px 0px 75px;
-
+  display: block;
+  color: #131313;
+  padding: 0px 75px 0px 75px;
 }
 
 #welcomeArea .topcontent a {
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 14px;
-    letter-spacing: 3px;
-
-
-
-    text-align: center;
-    display: inline-block;
-    text-transform: uppercase;
-    border-radius: 4px;
-    margin-top: 48px;
+  width: 200px;
+  height: 75px;
+  line-height: 30px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-top: 48px;
 }
 
 #welcomeArea .topcontent a:hover {
-    color: #131313;
-
+  color: #006eff;
 }
 
- .aboutTop .box {
-    padding: 10px 10px;
-    background: rgba(255, 255, 255, 0.90);
-    margin: 100px 0px 100px;
-    border-radius: 8px;
-    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.05);
+.aboutTop .box {
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.90);
+  margin: 100px 0px 100px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.05);
 }
 
 .aboutTop .box i {
-    font-size: 40px;
-    background-color: #131313;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-size: 40px;
+  background-color: #131313;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
- .aboutTop .box span {
-    display: block;
-    font-size: 48px;
-    font-weight: 400;
-    font-family: 'Exo', sans-serif;
-    background-color: #131313;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin-top: 13px;
+.aboutTop .box span {
+  display: block;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: 'Exo', sans-serif;
+  background-color: #131313;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-top: 13px;
 }
 
-
- .aboutTop .box h4 {
-    margin: 6px 0px 22px;
-    color: #131313;
-    font-weight: 600;
-
-
+.aboutTop .box h4 {
+  margin: 6px 0px 22px;
+  color: #131313;
+  font-weight: 600;
 }
 
 .aboutTop .box p {
-    color: #131313;
-    line-height: 30px;
-
+  color: #131313;
+  line-height: 30px;
 }
 
- .aboutTop .box:hover {
-    background: #131313;
+.aboutTop .box:hover {
+  background: #131313;
 }
 
- .aboutTop .box:hover i {
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #fff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.aboutTop .box:hover i {
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #fff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
- .aboutTop .box:hover span {
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #fff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.aboutTop .box:hover span {
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #fff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
- .aboutTop .box:hover h4,
- .aboutTop .box:hover P {
-    color: #131313;
+.aboutTop .box:hover h4,
+.aboutTop .box:hover P {
+  color: #131313;
 }
-
-
 
 /* =============================================
-Welcome Area End
+Welcome Area links End
 ================================================ */
-
-
-
+en hashrate
 
 /* ============================================
-6. About Area Start
+6. What is 0xBTC (About area) Start
 =============================================== */
 #aboutUs {
-
+  color: #000000;
+  background-color: #ffffff;
 }
 
 #aboutUs .heading-title p {
-    margin-top: 0px;
-    font-size: 16px;
-    color: #000000;
-    margin-bottom: 42px;
+  margin-top: 0px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #ffffff;
+  margin-bottom: 42px;
 }
 
 #aboutUs .content p {
-    color: #131313;
+  color: #131313;
 }
 
 .aboutUs .abtn {
-    width: 200px;
-    height: 60px;
-    text-align: center;
-    font-size: 14px;
-    color: #000000;
-    border: 2px solid #ff7f00;
-    line-height: 60px;
-    display: inline-block;
-    text-transform: uppercase;
-    border-radius: 5px;
-    letter-spacing: 3px;
-    margin-top: 5px;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  border: 2px solid #ff7f00;
+  line-height: 60px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  margin-top: 5px;
 }
 
 .aboutUs .abtn:hover {
-    border-color: #000000;
-    background: #ff7f00;
-    color: #ffffff;
+  border-color: #000000;
+  background: #ff7f00;
+  color: #ffffff;
 }
 
 /* ============================================
-About Area End
+6. What is 0xBTC (About area) End
 =============================================== */
-
-
-
 /* ==============================================
-7. Transaction Area Start
+7. Token Stats area Start
 ================================================ */
-
 #transaction {
-
-    background: #ffffff url(../img/sectionbg.png) no-repeat center;
-    padding: 25px 0px 50px;
+  background: #ff7f00;
+  padding: 25px 0px 50px;
 }
 
 #transaction .heading-title p {
-    margin-top: 3px;
-    margin-bottom: 37px;
+  margin-top: 3px;
+  margin-bottom: 37px;
+}
+
+table {
+  td {
+    padding-left: 0px;
+    background: #fff;
+  }
 }
 
 .table thead th {
-    vertical-align: bottom;
-    border-bottom: 0px solid #ffffff;
+  background: #ff7f00;
+  vertical-align: bottom;
+  border-bottom: 2px solid #4a00ff;
 }
 
 .table tr th {
-    color: #fff;
-    font-weight: 500;
-    font-size: 22px;
-    text-transform: uppercase;
-    padding: 26px 11px 26px;
-    text-align: left;
+  color: #000;
+  background: #ff7f00;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 0px;
+  text-align: left;
 }
 
 .table tr th:first-child {
-    padding-left: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .table tr td {
-    color: #fff;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: left;
-    padding: 20px 0px 0px 12px;
+  color: #000;
+  background: #f0f0f0;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
 }
 
 thead {
-    background: #ff7f00;
-    padding: 0px 10px;
+  padding: 0px 0px;
+}
+
+.card-text {
+  background: #f1f1f1;
+  border-radius: 0px;
+  position: center;
+  display: block;
+}
+
+.tab-text::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 100%;
+  transform: translateX(50%);
+  background: transparent;
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .tab-content {
-    border-radius: 10px;
-    background: #ff7f00;
-    position: relative;
+  background: #f0f0f0;
+  border-radius: 0px;
+  position: center;
+  display: block;
 }
 
 .tab-content::after {
-    position: absolute;
-    content: " ";
-    width: 95%;
-    height: 100%;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #ff7f00;
-    z-index: -1;
-    border-radius: 10px;
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 100%;
+  transform: translateX(50%);
+  background: transparent;
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .table .media {
-    padding-left: 10px;
+  padding-left: 10px;
 }
+
 .table .media img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .table .media p {
-    color: #fff;
-    font-weight: 400;
-    font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .table td,
 .table th {
-    border: 0px;
+  border: 0px;
 }
 
 .table-bordered th {
-    line-height: 35px;
+  line-height: 35px;
 }
 
 .table-bordered td {
-    line-height: 31px;
+  line-height: 31px;
 }
 
 .tab1 {
-    display: block;
-    text-align: center;
-    margin: 30px 0px 30px;
+  display: block;
+  text-align: center;
+  margin: 30px 0px 30px;
 }
 
 .tab1 ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .tab1 ul li a {
-    width: 200px;
-    height: 56px;
-    border-radius: 0px !important;
-    border: 0px;
-    margin-right: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fe846f;
-
+  width: 20px;
+  height: 56px;
+  border-radius: 0px !important;
+  border: 0px;
+  margin-right: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fe846f;
 }
 
 .tab1 .nav-pills .nav-link.active {
-    background: #131313;
+  background: #131313;
 }
 
 .tab1 ul li a p {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #131313;
-    line-height: 45px;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 45px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  letter-spacing: 3px;
 }
 
 .tab1 .nav-pills .nav-link.active p {
-    color: #fff;
+  color: #4a00ff;
 }
 
-
 #transaction .tab1 ul {
-    border: 2px solid #131313;
-    display: inline-block;
-    margin-bottom: 50px;
-    border-radius: 5px;
+  border: 2px solid #131313;
+  display: inline-block;
+  margin-bottom: 50px;
+  border-radius: 5px;
 }
 
 tbody .tr:first-child td {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
-
-
 /* ==============================================
-Transaction Area End
+7. Token Stats area End
 ================================================ */
-
 /*=================================================
-13. Investors Area Start
+13. Foundation Board members Area Start
 =================================================*/
 #investors {
-background:  url(../img/featurebg.png)no-repeat center;
-    padding: 100px 0px 130px;
+  background: #fff;
 }
 
 #investors .heading-title h2 {
-
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #investors .heading-title p {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 #investors .heading-title {
-
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
-
 #investors .box .social_icon ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 #investors .box .social_icon ul {
-    text-align: center;
+  text-align: center;
 }
 
 #investors .box .image {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 #investors .box .image .social_icon {
-    position: absolute;
-    z-index: 9;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    opacity: 0;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-
+  position: absolute;
+  z-index: 9;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #investors .box:hover .image .social_icon {
-    bottom: 0px;
-    opacity: 1;
+  bottom: 0px;
+  opacity: 1;
 }
 
 #investors .box .social_icon ul a {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    background: #fff;
-    display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background: #fff;
+  display: inline-block;
 }
 
 #investors .box .social_icon i {
-    background: #002059;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  background: #002059;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 #investors .box .social_icon ul a:hover {
-    background: #ff7f00;
+  background: #ff7f00;
 }
 
 #investors .box .social_icon ul a:hover i {
-    background: #ffffff;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  background: #000;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
-
 #investors .box {
-    background: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
 }
 
 #investors .box .info {
-    text-align: center;
-    padding: 13px 0px 11px;
+  text-align: center;
+  padding: 13px 0px 11px;
 }
 
 #investors .box .info h5 {
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #investors .box .info h5 {
-    font-size: 16px;
-    color: #131313;
-    font-weight: 600;
+  font-size: 16px;
+  color: #131313;
+  font-weight: 600;
 }
 
 #investors .box .info p {
-    font-size: 12px;
-    color: #131313;
+  font-size: 12px;
+  color: #131313;
 }
 
 /*=================================================
-Investors Area End
+Foundation Board members Area End
 =================================================*/
-
-
 /* =============================================
 8. Invest Area Start
 ================================================= */
 #investor {
-
-    padding: 123px 0px 130px;
+  background: #fff;
+  padding: 123px 0px 130px;
 }
 
 #investor .investbtn {
-    width: 140px;
-    height: 50px;
-    border: 2px solid #000000;
-    color: #000000;
-    text-align: center;
-    background: none;
-    line-height: 50px;
-    text-transform: uppercase;
-    font-size: 14px;
-    border-radius: 4px;
-    display: inline-block;
+  width: 140px;
+  height: 50px;
+  border: 2px solid #000000;
+  color: #000000;
+  text-align: center;
+  background: none;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 #investor .investbtn:hover {
-    border-color: #000;
-    background: #ffffff;
-    color: #000000;
+  border-color: #000;
+  background: #ffffff;
+  color: #000000;
 }
 
 #investor .heading-title h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #investor .heading-title p {
-    margin-top: 2px;
-    margin-bottom: 60px;
+  margin-top: 2px;
+  margin-bottom: 60px;
 }
 
 #investor .left .box {
-    padding: 45px 30px 50px;
-    border-radius: 10px;
-    background: #ff7f00;
-    border: 2px solid #000000;
+  padding: 45px 30px 50px;
+  border-radius: 10px;
+  background: #ff7f00;
+  border: 2px solid #000000;
 }
 
-
 #investor .left .box h3 {
-    color: #000;
-    margin-bottom: 20px;
-    font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 #investor .left .box p {
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 27px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 27px;
 }
-
 
 /* =============================================
 9. Invest Area End
 ================================================= */
-
 #feature {
-  display: none;
-    background: url(../img/featurebg.png) no-repeat center;
-    background-size: cover;
-    padding: 130px 0px 100px;
+  background: url(../img/featurebg.png) no-repeat center;
+  background-size: cover;
+  padding: 130px 0px 100px;
 }
 
 #feature .box {
-    background: #fff;
+  background: #fff;
 }
 
 #feature .box .topHeader {
-    display: block;
+  display: block;
 }
 
 #feature .box .topHeader h3 {
-    display: inline-block;
+  display: inline-block;
 }
 
 #feature .box {
-    margin-bottom: 30px;
-    padding: 25px 30px 30px 30px;
-    border-radius: 10px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+  padding: 25px 30px 30px 30px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #feature .box .topHeader i {
-    font-size: 40px;
-    margin-right: 20px;
-    background: #131313;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-size: 40px;
+  margin-right: 20px;
+  background: #131313;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 #feature .box .topHeader {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #feature .box .topHeader h3 {
-    color: #131313;
-    font-weight: 600;
+  color: #131313;
+  font-weight: 600;
 }
 
 #feature .box .body p {
-    margin-bottom: 17px;
-    color: #131313;
-    line-height: 30px;
+  margin-bottom: 17px;
+  color: #131313;
+  line-height: 30px;
 }
 
 #feature .box .body a {
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    background: #131313;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    position: relative;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background: #131313;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  position: relative;
 }
 
 #feature .box .body a::after {
-    position: absolute;
-    content: " ";
-    bottom: 0px;
-    left: 0px;
-    height: 1px;
-    width: 100%;
-    background: #131313;
-
+  position: absolute;
+  content: " ";
+  bottom: 0px;
+  left: 0px;
+  height: 1px;
+  width: 100%;
+  background: #131313;
 }
 
 #feature .box:hover {
-    bbackground: #131313;
+  bbackground: #131313;
 }
 
 #feature .box:hover .topHeader i,
 #feature .box:hover .topHeader h3,
 #feature .box:hover .body a {
-    color: #fff;
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #fff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  color: #fff;
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #fff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 #feature .box:hover .body p {
-    color: #fff;
+  color: #fff;
 }
 
 #feature .box:hover .body a::after {
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #ffffff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #ffffff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
 }
 
 /* =============================================
 Feature Area Start
 ================================================ */
-
-
 /* ==================================================
  10. Why Should Choose Us Area Start
  ==================================================== */
-
 #wcu {
-    display: none;
-    background: url(../img/whaychoseusbg.png) no-repeat bottom;
-    padding: 124px 0px 102px;
+  background: url(../img/whaychoseusbg.png) no-repeat bottom;
+  padding: 124px 0px 102px;
 }
 
 #wcu .heading-title h2 {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 #wcu .heading-title p {
-    margin-top: 3px;
-    margin-bottom: 68px;
+  margin-top: 3px;
+  margin-bottom: 68px;
 }
-
-
 
 #wcu .heading-title {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-
 #wcu .box {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
-    margin-bottom: 30px;
-    background: #fff;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+  margin-bottom: 30px;
+  background: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #wcu .box .content {
-    padding: 47px 30px 50px;
+  padding: 47px 30px 50px;
 }
 
 #wcu .box .content h3 {
-    color: #384371;
-    font-weight: 600;
+  color: #384371;
+  font-weight: 600;
 }
-
 
 #wcu .box .content p {
-    color: #575f84;
-    line-height: 30px;
-    margin: 16px 0px 23px;
+  color: #575f84;
+  line-height: 30px;
+  margin: 16px 0px 23px;
 }
 
-
 #wcu .box .viweBtn {
-    width: 140px;
-    height: 50px;
-    border: 2px solid #fe846f;
-    color: #fe846f;
-    text-align: center;
-    background: none;
-    line-height: 50px;
-    text-transform: uppercase;
-    font-size: 14px;
-    border-radius: 4px;
-    display: inline-block;
+  width: 140px;
+  height: 50px;
+  border: 2px solid #fe846f;
+  color: #fe846f;
+  text-align: center;
+  background: none;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 #wcu .box .viweBtn:hover {
-    border-color: #fe846f;
-    background: #fe846f;
-    color: #fff;
+  border-color: #fe846f;
+  background: #fe846f;
+  color: #fff;
 }
 
 #wcu .box:hover {
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* ==================================================
  Why Should Choose Us Area End
  ==================================================== */
-
-
-
-
 /* ===================================================
 11. Payment Method Area Start
 ===================================================== */
 #paymentMethod {
-    display: none;
-    padding: 123px 0px 150px;
+  padding: 123px 0px 150px;
 }
 
 #paymentMethod .paypatner ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 #paymentMethod .paypatner ul li a {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 
 #paymentMethod .heading-title h2 {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 #paymentMethod .heading-title p {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
-
-
 #paymentMethod .paypatner {
-    margin: 67px 0px 52px;
+  margin: 67px 0px 52px;
 }
 
 .calculate .box {
-    border-radius: 10px;
-    padding: 50px 30px 50px;
-    background: -webkit-linear-gradient(to right, #e6aefa, #5271c4);
-    background: -moz-linear-gradient(to right, #e6aefa, #5271c4);
-    background: linear-gradient(to right, #e6aefa, #5271c4);
-    position: relative;
+  border-radius: 10px;
+  padding: 50px 30px 50px;
+  background: -webkit-linear-gradient(to right, #e6aefa, #5271c4);
+  background: -moz-linear-gradient(to right, #e6aefa, #5271c4);
+  background: linear-gradient(to right, #e6aefa, #5271c4);
+  position: relative;
 }
 
 .calculate .box::after {
-    position: absolute;
-    content: " ";
-    width: 95%;
-    height: 100%;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: -webkit-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
-    background: -moz-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
-    background: linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
-    z-index: -1;
-    border-radius: 10px;
+  position: absolute;
+  content: " ";
+  width: 95%;
+  height: 100%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: -webkit-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+  background: -moz-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+  background: linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .calculate .box input {
-    width: 100%;
-    height: 27px;
-    background: none;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 27px;
+  background: none;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
 }
 
 .calculate .box input::placeholder {
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
 }
 
 .calculate .box h3 {
-    color: #fff;
-    margin-bottom: 20px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .calculate .box label {
-    color: #fff;
-    font-weight: 500;
+  color: #fff;
+  font-weight: 500;
 }
 
 .calculate .box input:focus {
-    outline: 0px;
+  outline: 0px;
 }
 
-
-
-
-
 #paymentMethod form button {
-    width: 100%;
-    height: 60px;
-    border: 2px solid #fff;
-    color: #fff;
-    text-align: center;
-    background: none;
-    line-height: 60px;
-    text-transform: uppercase;
-    font-size: 14px;
-    border-radius: 4px;
-    display: inline-block;
-    font-family: 'Exo', sans-serif;
-    font-weight: 600;
+  width: 100%;
+  height: 60px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  background: none;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
 }
 
 #paymentMethod form button:hover {
-    border-color: #fff;
-    background: #fff;
-    color: #6c7bcd;
+  border-color: #fff;
+  background: #fff;
+  color: #6c7bcd;
 }
 
 /* ===================================================
 Payment Method Area End
 ===================================================== */
-
-
-
 /* ===================================================
 12. Our Package Area Start
 ===================================================== */
-
 #package {
-  display: none;
-    background: url(../img/packbg.png) no-repeat;
-    padding: 123px 0px 154px;
-    background-size: cover;
-    border-top: 1px solid rgba(54, 31, 31, 0.06);
+  background: url(../img/packbg.png) no-repeat;
+  padding: 123px 0px 154px;
+  background-size: cover;
+  border-top: 1px solid rgba(54, 31, 31, 0.06);
 }
 
 #package .heading-title {
-    margin-bottom: 67px;
+  margin-bottom: 67px;
 }
 
 #package .heading-title h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .priceBox {
-    background: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.102);
-    padding: 30px 30px 0px 30px;
-    text-align: center;
-    border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.102);
+  padding: 30px 30px 0px 30px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .priceBox .header h3 {
-    font-size: 24px;
-    font-family: 'Exo', sans-serif;
-    font-weight: 600;
-    margin-bottom: 20px;
-    background: #ff7f00;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-size: 24px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background: #ff7f00;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .priceBox.meddel .header h3 {
-    font-size: 24px;
-    font-family: 'Exo', sans-serif;
-    font-weight: 600;
-    margin-bottom: 20px;
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #ffff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-size: 24px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #ffff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
-
 .priceBox .header h5 {
-    font-size: 16px;
-    color: #575f84;
-    margin-bottom: 10px;
-    font-weight: 500;
+  font-size: 16px;
+  color: #575f84;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .priceBox .list ul li p {
-    line-height: 35px;
-    color: #575f84;
+  line-height: 35px;
+  color: #575f84;
 }
-
 
 .priceBox .footer h3 {
-    font-size: 30px;
-    font-family: 'Exo', sans-serif;
-    font-weight: 600;
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-size: 30px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
+  background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  background: linear-gradient(to right, #efb1fd, #5271c4);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
-
 .priceBox .footer p {
-    font-size: 12px;
-    font-weight: 600;
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  background: linear-gradient(to right, #efb1fd, #5271c4);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .priceBox .footer {
-    padding: 16px 0px 49px;
+  padding: 16px 0px 49px;
 }
 
 .priceBox .button {
-    position: relative;
+  position: relative;
 }
 
 .priceBox .button a {
-    position: absolute;
-    width: 140px;
-    height: 50px;
-    font-family: 'Exo', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    line-height: 50px;
-    display: inline-block;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 5px;
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -25px;
-
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  background: linear-gradient(to right, #efb1fd, #5271c4);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
   //   box-shadow: 0px 0px 10px #0003;
 }
 
 .priceBox.meddel .button a {
-    background: #fff;
-    font-weight: 14px;
-    text-transform: uppercase;
-    color: #384371;
-
+  background: #fff;
+  font-weight: 14px;
+  text-transform: uppercase;
+  color: #384371;
 }
 
-
 .priceBox.meddel {
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
+  background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  background: linear-gradient(to right, #efb1fd, #5271c4);
 }
 
 .priceBox.meddel h3,
 .priceBox.meddel h5,
 .priceBox.meddel ul li p {
-    color: #fff;
+  color: #fff;
 }
 
 .priceBox.meddel .footer h3,
 .priceBox.meddel .footer p {
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #fff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #fff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .pBoxPopular {
-    text-align: center;
-    padding: 5px;
-    border-image: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);
-    border-width: 3px;
-    margin-bottom: 10px;
-    position: relative;
-    background: #fff;
-    border: 2px solid transparent;
-    -moz-border-image: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    -webkit-border-image: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
-    border-image-slice: 1;
+  text-align: center;
+  padding: 5px;
+  border-image: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);
+  border-width: 3px;
+  margin-bottom: 10px;
+  position: relative;
+  background: #fff;
+  border: 2px solid transparent;
+  -moz-border-image: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  -webkit-border-image: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
 }
 
 .pBoxPopular p {
-    color: #fff;
-    position: relative;
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  color: #fff;
+  position: relative;
+  background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  background: linear-gradient(to right, #efb1fd, #5271c4);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-.pBoxPopular p::after{
-    position: absolute;
-    content: " ";
+
+.pBoxPopular p::after {
+  position: absolute;
+  content: " ";
   //  width:
 }
-.pBoxPopular::after {
-    position: absolute;
-    content: " ";
-    width: 15px;
-    height: 15px;
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    z-index: -1;
-}
 
+.pBoxPopular::after {
+  position: absolute;
+  content: " ";
+  width: 15px;
+  height: 15px;
+  background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  background: linear-gradient(to right, #efb1fd, #5271c4);
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
+}
 
 .priceBox.normal {
-    margin-top: 43px;
+  margin-top: 43px;
 }
 
-.priceBox:hover{
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
+.priceBox:hover {
+  background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  background: linear-gradient(to right, #efb1fd, #5271c4);
 }
-
-
 
 .priceBox:hover .header h3,
 .priceBox:hover .footer h3,
-.priceBox:hover .footer p
-
-{
-
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #fff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.priceBox:hover .footer p {
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #fff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-
-
 
 .priceBox:hover .list ul li p,
 .priceBox:hover .header h5,
-.priceBox:hover .footer p
-{
- color: #fff;
+.priceBox:hover .footer p {
+  color: #fff;
 }
 
-.priceBox:hover .button a{
-    background-color: #fff;
+.priceBox:hover .button a {
+  background-color: #fff;
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #fff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
+  color: #242424;
+}
 
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #fff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    color: #242424;
+.pBoxPopularR:hover .pBoxPopular {
+  background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+  background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+  background: linear-gradient(to right, #efb1fd, #5271c4);
 }
-.pBoxPopularR:hover .pBoxPopular{
 
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
+.pBoxPopularR:hover .pBoxPopular p {
+  background: -webkit-linear-gradient(to right, #fff, #fff);
+  background: -moz-linear-gradient(to right, #fff, #fff);
+  background: linear-gradient(to right, #fff, #fff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-.pBoxPopularR:hover .pBoxPopular p{
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #fff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
+
 /* ===================================================
 Our Package Area End
 ===================================================== */
-
-
-
-
-
-
-
 /* ==============================================
  14. FAQ Area Start
  ================================================ */
 #faq {
-    display: none;
-    background: url(../img/faqbg.png) no-repeat bottom;
-    background-size: cover;
-    padding: 122px 0px 183px;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #ebebeb;
+  padding: 122px 0px 183px;
+  border-top: 2px solid #000;
 }
 
 #faq .heading-title p {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 #faq .heading-title h2 {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 #faq .heading-title {
-    margin-bottom: 68px;
+  margin-bottom: 68px;
 }
 
 .faq-accordian .panel-group .panel.panel-default {
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
 }
 
 .faq-accordian .panel-group .panel .panel-heading {
-    border: none;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
 
 .faq-accordian .panel-group .panel .panel-heading .panel-title a {
-    background-color: rgba(255, 255, 255, 0.10);
-    padding: 24px 30px;
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    position: relative;
-    padding-left: 30px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.10);
+  padding: 24px 30px;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .faq-accordian .panel-group .panel .panel-heading .panel-title a:after {
-    position: absolute;
-    right: 30px;
-    top: 38px;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: "\f107";
-    transform: translateY(-50%);
-    font-size: 18px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 30px;
+  top: 38px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f107";
+  transform: translateY(-50%);
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-accordian .panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]:after {
-    content: "\f106";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 18px;
-    color: #575f84;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+  content: "\f106";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 18px;
+  color: #575f84;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .faq-accordian .panel-group .panel .panel-heading .panel-title a {
-    color: #575f84;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Exo', sans-serif;
-
+  color: #575f84;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Exo', sans-serif;
 }
 
 .faq-accordian .panel-group .panel .panel-heading .panel-title a[aria-expanded="true"] {
-    border-bottom: 0;
-    color: #1f3566;
-    background: #fff;
-    /* padding-bottom: 0; */
-    cursor: pointer;
+  border-bottom: 0;
+  color: #1f3566;
+  background: #fff;
+  /* padding-bottom: 0; */
+  cursor: pointer;
 }
 
 .faq-accordian .panel-group .panel .panel-body {
-    background-color: #fff;
-    border-top: 0;
-    padding: 0px 30px 44px 30px;
-    font-size: 16px;
-    color: #575f84;
-    line-height: 26px;
-    line-height: 30px;
+  background-color: #fff;
+  border-top: 0;
+  padding: 0px 30px 44px 30px;
+  font-size: 16px;
+  color: #575f84;
+  line-height: 26px;
+  line-height: 30px;
 }
 
 .faq-accordian .panel-group .panel .panel-heading .panel-title a[aria-expanded="true"] {
-    padding-top: 47px;
+  padding-top: 47px;
 }
 
 /* ====================================================
 FAQ Area End
 ======================================================= */
-
-
-
 /*==================================================
 15. Footer Area Start
 ====================================================*/
 #footer {
-    background: #131313;
-    padding: 195px 0px 26px;
+  background: #ff7f00;
+  padding: 195px 0px 26px;
 }
 
 #footer .logo a {
-    font-size: 30px;
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 14px;
-    display: inline-block;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: inline-block;
 }
 
 #footer .box p {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #footer .box .social_links {
-    margin: 28px 0px 25px;
+  margin: 28px 0px 25px;
 }
 
 #footer .box .social_links ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
-
 #footer .box .social_links i {
-    width: 25px;
-    height: 25px;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    line-height: 25px;
-    margin-right: 18px;
-    border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 18px;
+  border-radius: 3px;
 }
 
 #footer .box .social_links i.fa-facebook-f {
-    background: #254887;
+  background: #254887;
 }
 
 #footer .box .social_links i.fa-twitter {
-    background: #00afe9;
+  background: #00afe9;
 }
 
 #footer .box .social_links i.fa-google-plus-g {
-    background: #d14232;
+  background: #d14232;
 }
 
 #footer .box .social_links i.fa-linkedin-in {
-    background: #329ad1;
+  background: #329ad1;
 }
 
 #footer .box2 h2 {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 16px;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 16px;
 }
 
 #footer .box2 ul li a {
-    color: rgba(255, 255, 255, 0.8);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 #footer .box ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #footer .box3 h2 {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 16px;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 16px;
 }
 
 #footer .box3 ul li a {
-    color: rgba(255, 255, 255, 0.8);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+  color: #000;
+  ;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-
 #footer .box4 h2 {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 16px;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 16px;
 }
 
 #footer .box4 a {
-    display: block;
-    margin-top: 15px;
-    color: rgba(255, 255, 255, 0.8);
+  display: block;
+  margin-top: 15px;
+  color: #220000;
 }
 
-#footer  .copyright p{
-    color: #ffff;
-}
-#footer  .copyright{
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    padding-top: 25px;
-    margin-top: 105px;
+#footer .copyright p {
+  color: #fff;
 }
 
-
+#footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 25px;
+  margin-top: 105px;
+}
 
 /*==================================================
 Footer Area End
 ====================================================*/
-
-
-
-
 /*==================================================
-16. Click BottomToTop
+16. Click BottomToTop Start
 ====================================================*/
 .totop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    border-radius: 50%;
-    z-index: 9999;
-    opacity: 0;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  z-index: 9999;
+  opacity: 0;
 }
 
 .totop.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .totop>a {
-    background: #ff7f00;
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 45px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background: #ff7f00;
+  color: #fff;
+  display: block;
+  font-size: 40px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .totop>a:hover {
-    background: #ffffff;
-    color: #ff7f00;
+  background: #FF4D00;
+  color: #000;
 }
+
+/*==================================================
+16. Click BottomToTop End
+====================================================*/

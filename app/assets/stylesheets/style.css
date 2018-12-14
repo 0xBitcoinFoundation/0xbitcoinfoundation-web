@@ -1140,7 +1140,7 @@ footer{
     border-radius: 0 25px 25px 0;
 }
 
-#scrollUp{
+.scrollUp{
     background-color: #ff7209!important;
     border: 1px solid #ff7209!important;
     border-radius: 8px;

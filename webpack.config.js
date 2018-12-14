@@ -49,9 +49,10 @@ var webpackPlugins = [
 const routesData = {
   routes: [
     {url: '/', title: '0xBitcoin', template: 'app/index.html', filename: 'index.html'},
-     {url: '/', title: '0xBitcoin', template: 'app/index.html', filename: 'index.html'},
 
     {url: '/wallet', title: 'Wallet', template: 'app/wallet.html', filename: 'wallet/index.html'},
+    {url: '/foundation', title: 'Foundation', template: 'app/foundation.html', filename: 'foundation/index.html'},
+    {url: '/test', title: 'Test template', template: 'app/test.html', filename: 'test/index.html'},
   ]
 }
 
