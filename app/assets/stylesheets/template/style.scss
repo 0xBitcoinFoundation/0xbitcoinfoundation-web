@@ -629,6 +629,14 @@ en hashrate
   margin-bottom: 37px;
 }
 
+
+.mygrid-wrapper-div {
+    border: solid #ff7f00 2px;
+    overflow: scroll;
+    height: 575px;
+    padding: 10px 10px 10px 10px;
+}
+
 table {
   td {
     padding-left: 0px;
@@ -670,8 +678,15 @@ thead {
   padding: 0px 0px;
 }
 
+.card {
+  background: #fafafa;
+  border-radius: 1px;
+  position: center;
+  display: block;
+}
+
 .card-text {
-  background: #f1f1f1;
+  background: #f0f0f0;
   border-radius: 0px;
   position: center;
   display: block;
