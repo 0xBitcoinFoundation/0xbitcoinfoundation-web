@@ -26,6 +26,8 @@ $(document).ready(function() {
 
   fundraiser.init()
 
+  
+
 //  tokenStats.init();
 
 });

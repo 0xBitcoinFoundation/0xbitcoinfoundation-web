@@ -35,6 +35,9 @@ Front-end developer : Mamunur Rashid
 //@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+::selection { background: #6b6b6b; /* WebKit/Blink Browsers */}
+::-moz-selection { background: #6b6b6b; /* Gecko Browsers */}
+
 * {
   -webkit-transition: all 1s;
 }
@@ -245,7 +248,7 @@ header.header {
   left: 0;
   width: 100%;
   z-index: 9999;
-  background: #000;
+  background: rgba(#000000, 0.87);
   border-bottom: 0px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
@@ -259,7 +262,7 @@ $breakpoint: 800px;
 $nav-height: 65px;
 $nav-background: transparent;
 $nav-font-color: #fff;
-$link-hover-color: #2582dd;
+$link-hover-color: #000;
 
 // Outer navigation wrapper
 .navigation {
@@ -328,7 +331,7 @@ nav {
         min-width: 190px;
 
         a {
-          background: #000;
+          background: rgba(#000000, 0.90);
           padding: 15px;
           line-height: 20px;
         }
@@ -631,7 +634,7 @@ en hashrate
 
 
 .mygrid-wrapper-div {
-    border: solid #ff7f00 2px;
+    border: solid #7c7c7c 1px;
     overflow: scroll;
     height: 575px;
     padding: 10px 10px 10px 10px;
@@ -1662,20 +1665,28 @@ FAQ Area End
   border-radius: 3px;
 }
 
-#footer .box .social_links i.fa-facebook-f {
-  background: #254887;
+#footer .box .social_links i.fa-github {
+  background: #2b2b2b;
 }
 
 #footer .box .social_links i.fa-twitter {
-  background: #00afe9;
+  background: #008ff6;
 }
 
-#footer .box .social_links i.fa-google-plus-g {
-  background: #d14232;
+#footer .box .social_links i.fa-medium {
+  background: #2b2b2b;
 }
 
-#footer .box .social_links i.fa-linkedin-in {
-  background: #329ad1;
+#footer .box .social_links i.fa-discord {
+  background: #6100b6;
+}
+
+#footer .box .social_links i.fa-telegram-plane {
+  background: #006af6;
+}
+
+#footer .box .social_links i.fa-reddit {
+  background: #ff3600;
 }
 
 #footer .box2 h2 {
