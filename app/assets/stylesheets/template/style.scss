@@ -38,6 +38,8 @@ Front-end developer : Mamunur Rashid
 ::selection { background: #6b6b6b; /* WebKit/Blink Browsers */}
 ::-moz-selection { background: #6b6b6b; /* Gecko Browsers */}
 
+
+
 * {
   -webkit-transition: all 1s;
 }
@@ -170,6 +172,8 @@ button {
 .affix {
   width: 100%;
 }
+
+
 
 #map {
   width: 100%;
@@ -458,12 +462,34 @@ article {
 /* ================================================
 4. Main Menu header Area & navbar End
 ===================================================*/
+
+
+
+
+
 /* =============================================
 5. Welcome Area links Start
 ================================================ */
 #welcomeArea {
   background: #ff7f00;
 }
+
+
+#welcomeArea .carousel-inner .img-fluid {
+  width: 600px;
+  height: 125px;
+  //line-height: 30px;
+  //font-size: 14px;
+  //letter-spacing: 3px;
+  //text-align: center;
+  display: inline-block;
+  //text-transform: uppercase;
+  border-radius: 4px;
+  margin-top: 48px;
+  max-width: 100%;
+  height: auto;
+}
+
 
 #welcomeArea .topcontent {
   padding: 75px 0px 75px;
@@ -815,7 +841,8 @@ tbody .tr:first-child td {
 13. Foundation Board members Area Start
 =================================================*/
 #investors {
-  background: #fff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 #investors .heading-title h2 {

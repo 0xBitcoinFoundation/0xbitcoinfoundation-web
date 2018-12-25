@@ -35,7 +35,10 @@
 	<!--Favicon-->
 	<link rel="shortcut icon" type="image/png" href="app/assets/img/favicon.png" />
 	<!--Bootstrap Stylesheet-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
 </head>
 
@@ -184,32 +187,49 @@
 								</div>
 								<div class="col-md-5 align-self-center col-sm-flex">
 									<div class="center">
-										<img width="339" heigh="250" src="app/assets/img/mine.gif">
-									</div>
+										<img width="339" heigh="250" src="app/assets/img/mine.gif" class="img-fluid" alt="Responsive image">
 								</div>
 							</div>
 						</div>
 
-						<h1></h1>
-						<div class="col-xs-12 col-lg-12">
-							<div align=center>
-								<a class="nav-item" href="https://metamask.io" target="_blank">
-									<img src="app/assets/img/metamask.png" class="shadow hover-effects" style="border-radius: 50% " height="95" width="95">
-									<br>Metamask</a>
+							<div class="col-xs-12 col-lg-12">
+								<div align=center>
+									<a class="nav-item" href="https://metamask.io" target="_blank">
+										<img src="app/assets/img/metamask.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+										<br>Metamask</a>
 
-								<a class="nav-item" href="https://0xbitcoin.org/wallet" target="_blank">
-									<img src="app/assets/img/logo-white.png" class="shadow hover-effects" style="border-radius: 50% " height="95" width="95">
-									<br>WebWallet</a>
+									<a class="nav-item" href="https://0xbitcoin.org/wallet" target="_blank">
+										<img src="app/assets/img/logo-white.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+										<br>WebWallet</a>
 
-								<a class="nav-item" href="https://trustwalletapp.com/" target="_blank">
-									<img src="app/assets/img/trust.png" class="shadow hover-effects" style="border-radius: 50% " height="95" width="95">
-									<br>TrustWallet</a>
+									<a class="nav-item" href="https://trustwalletapp.com/" target="_blank">
+										<img src="app/assets/img/trust.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+										<br>TrustWallet</a>
 
-								<a class="nav-item" href="https://0xbitcoin.trade/" target="_blank">
-									<img src="app/assets/img/uniswap.png" class="shadow hover-effects" style="border-radius: 50% " height="95" width="95">
-									<br>Uniswap</a>
+									<a class="nav-item" href="https://0xbitcoin.trade/" target="_blank">
+										<img src="app/assets/img/uniswap.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+										<br>Uniswap</a>
+								</div>
 							</div>
+
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="app/assets/img/bzxquote1.png" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="carousel-item">
+      <img src="app/assets/img/compoundquote.png" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="carousel-item">
+      <img src="app/assets/img/audit.png" class="img-fluid" alt="Responsive image">
+    </div>
+  </div>
+</div>
+
+
 						</div>
+
+						<h1></h1>
 					</div>
 				</div>
 			</div>
@@ -233,11 +253,9 @@
 	</style>
 
 	<section class="col-lg-12" id="aboutUs" class="aboutUs">
+
 <div class="container">
-
-
-
-	<div class="row justify-content-center">
+<div class="row justify-content-center">
 
   <div class="col-sm-8">
 		<div class="shadow p3 mb-5 rounded">
@@ -352,7 +370,7 @@
 <div id=mining>
 	<strong>MINING IN A NUTSHELL</strong>
 	<p>0xBitcoin is a Smart Contract on the Ethereum network, and the concept of Token Mining is patterned after Bitcoin’s distribution. Rather than solving ‘blocks’, work is issued by the contract, which also maintains a Difficulty which goes up or down depending on how often a Reward is issued. Whenever a miner submits a solution, the miner must pay a small gas fee in order to execute the Ethereum smart contract code for the mint() function. If the gas fee is too low, the solution will take too long to be mined and if difficulty is not at equilibrium then another mint() solution from another miner will likely be mined first. This renders the original miners solution invalid and the transaction will revert(). To alleviate gas fees for miners, they can instead mine into a pool. This way, the pool will then submit the solutions to the smart contract and pay a gas fee. Then the pool will typically take a small percent of the rewards and give the rest to the miner for providing the PoW solution.</p>
-	<p>The 0xBitcoin contract was deployed by Infernal_Toast at Ethereum address: <a href="https://etherscan.io/address/0x8fea1cf4845417f0525f5effca0f312a8c419a4e" target="_blank">0xb6ed7644c69416d67b522e20bc294a9a9b405b31</a></p>
+	<p>The 0xBitcoin contract was deployed by Infernal_Toast at Ethereum address: <a href="https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank">0xb6ed7644c69416d67b522e20bc294a9a9b405b31</a></p>
 	<ul>
 	<li><strong>MINING IN MORE DETAIL</strong></li>
 	</ul>
@@ -1494,21 +1512,20 @@
 						</h2>
 						<ul>
 							<li>
-								<a href="../">
-									Overview
-								</a>
+								<a href="../">Overview</a>
 							</li>
 							<li>
-								<a href="../foundation">
-									Foundation
-								</a>
+								<a href="../foundation">Foundation</a>
+							</li>
+							<li>
+								<a href="#top">Top of page</a>
 							</li>
 							<li>
 								<strong><font color="#000">Pools</font></strong><br>
-								<a href="http://mike.rs" target="_blank">-Mikers Pool</a><br>
-								<a href="http://0xbtc.tosti.ro" target="_blank">-Tosti Pool</a><br>
-								<a href="http://tokenminingpool.com/" target="_blank">-Token Mining Pool</a><br>
-								<a href="http://0xbtc.pool.nocroom.com/" target="_blank">-NOCROOM Pool</a><br>
+								<a href="http://mike.rs" target="_blank">Mikers Pool</a><br>
+								<a href="http://0xbtc.tosti.ro" target="_blank">Tosti Pool</a><br>
+								<a href="http://tokenminingpool.com/" target="_blank">Token Mining Pool</a><br>
+								<a href="http://0xbtc.pool.nocroom.com/" target="_blank">NOCROOM Pool</a><br>
 							</li>
 						</ul>
 					</div>
@@ -1521,28 +1538,28 @@
 						<ul>
 							<li>
 								<strong><font color="#000">Decentralized</font></strong><br>
-								<a href="https://www.saturn.network/exchange/ETH/token/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank">-Saturn.network</a>
+								<a href="https://www.saturn.network/exchange/ETH/token/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank">Saturn.network</a>
 							</li>
 							<li>
-								<a href="https://ethex.market/#0xbtc" target="_blank">-Ethex</a>
+								<a href="https://ethex.market/#0xbtc" target="_blank">Ethex</a>
 							</li>
 							<li>
-								<a href="https://0xbitcoin.trade/" target="_blank">-Uniswap</a>
+								<a href="https://0xbitcoin.trade/" target="_blank">Uniswap</a>
 							</li>
 							<li>
-								<a href="https://enclaves.io/trade/0xBTC" target="_blank">-Enclaves</a>
+								<a href="https://enclaves.io/trade/0xBTC" target="_blank">Enclaves</a>
 							</li>
 							<li>
-								<a href="https://idex.market/eth/0xbtc" target="_blank">-IDEX</a>
+								<a href="https://idex.market/eth/0xbtc" target="_blank">IDEX</a>
 							</li>
 							<li>
-								<a href="https://forkdelta.github.io/#!/trade/0xBTC-ETH" target="_blank">-Forkdelta</a>
+								<a href="https://forkdelta.github.io/#!/trade/0xBTC-ETH" target="_blank">Forkdelta</a>
 							</li>
 							<li>
 								<strong><font color="#000">Centralized</font></strong><br>
-								<a href="https://mercatox.com/exchange/0xBTC/ETH" target="_blank">-Mercatox</a>
+								<a href="https://mercatox.com/exchange/0xBTC/ETH" target="_blank">Mercatox</a>
 							</li>
-							<li><a href="https://www.coinexchange.io/market/0xBTC/BTC?r=14503e19" target="_blank">-Coinexchange.io</a>
+							<li><a href="https://www.coinexchange.io/market/0xBTC/BTC?r=14503e19" target="_blank">Coinexchange.io</a>
 							</li>
 						</ul>
 					</div>
@@ -1576,20 +1593,6 @@
 
 		<div class="copyright">
 			<p align=center>
-
-
-			      Why? <a href="https://medium.com/@admazzola/the-case-for-the-mineable-erc20-token-78cbb4c34331"> Read more on Medium </a><br>
-
-			      Read more detail at <a href="https://github.com/0xbitcoin" target="_blank"> Github </a><br>
-
-			     Join the community on <a href="https://reddit.com/r/0xbitcoin" target="_blank"> Reddit </a><br><br>
-
-
-
-
-
-
-
 
 
 			         <font color="#000"><strong>0xBitcoin</strong> Pure-mined ERC20 currency.</font>

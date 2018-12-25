@@ -1,4 +1,3 @@
-
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -8,7 +7,7 @@
 
 <head>
 	<style>
-	#fundraiser-progress-container {
+		#fundraiser-progress-container {
 			width: 400px;
 			height: 45px;
 			margin: -15px 0 0 -200px;
@@ -32,10 +31,14 @@
 	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<title> 0xBTC Foundation </title>
+	<title> 0xBitcoin </title>
 	<!--Favicon-->
 	<link rel="shortcut icon" type="image/png" href="app/assets/img/favicon.png" />
 	<!--Bootstrap Stylesheet-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
 </head>
 
@@ -57,94 +60,111 @@
 	<header id="mainHeader" class="header">
 
 
-	  <section class="navigation">
-  <div class="nav-container">
-    <div class="navbar-brand">
-			<a class="navbar-brand" href="../">
-				<img width=55 height=55 src="app/assets/img/logo.svg"> <font color="#ffffff">0xBitcoin</font>
-			</a>
-    </div>
-    <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="../">Overview</a>
-        </li>
-				<li>
-          <a href="../foundation">Foundation</a>
-        </li>
-      <li>
-          <a href="#!">Exchanges</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="https://ethex.market/#0xbtc" target="_blank">Ethex</a>
-            </li>
-            <li>
-              <a href="https://mercatox.com/exchange/0xBTC/ETH" target="_blank">Mercatox</a>
-            </li>
-            <li>
-              <a href="https://idex.market/eth/0xbtc" TARGET="_blank">IDEX</a>
-            </li>
+		<section class="navigation">
+
+			<div class="nav-container">
+				<div class="navbar-brand">
+					<a class="navbar-brand" href="../">
+						<img width=55 height=55 src="app/assets/img/logo.svg">
+						<font color="#ffffff">0xBitcoin</font>
+					</a>
+				</div>
+				<nav>
+					<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+					<ul class="nav-list">
 						<li>
-              <a href="https://enclaves.io/trade/0xBTC" TARGET="_blank">Enclaves</a>
-            </li>
+							<a href="../">Overview</a>
+						</li>
 						<li>
-              <a href="https://forkdelta.github.io/#!/trade/0xBTC-ETH" TARGET="_blank">Forkdelta</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#!">Connect</a>
-          <ul class="nav-dropdown">
+							<a href="../foundation">Foundation</a>
+						</li>
 						<li>
-              <a href="https://discord.gg/JGEqqmS" target="_blank">Discord</a>
-            </li>
+							<a href="#!">Pools</a>
+							<ul class="nav-dropdown">
+								<li>
+									<a href="http://mike.rs/" target="_blank">Mikers Pool</a>
+								</li>
+								<li>
+									<a href="http://0xbtc.tosti.ro" target="_blank">Tosti Pool</a>
+								</li>
+								<li>
+									<a href="http://tokenminingpool.com/" target="_blank">Token Mining Pool</a>
+								</li>
+								<li>
+									<a href="http://0xbtc.pool.nocroom.com/" target="_blank">NOCROOM Pool</a>
+								</li>
+							</ul>
+						</li>
 						<li>
-              <a href="https://www.reddit.com/r/0xbitcoin/" target="_blank">Reddit</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/0xBTCFoundation" target="_blank">Twitter</a>
-            </li>
-            <li>
-            <a href="https://t.me/ZEROxBTC" target="_blank">Telegram</a>
-            </li>
+							<a href="#!">Exchanges</a>
+							<ul class="nav-dropdown">
+								<li>
+									<a href="https://www.saturn.network/exchange/ETH/token/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank">Saturn.network</a>
+								</li>
+								<li>
+									<a href="https://ethex.market/#0xbtc" target="_blank">Ethex</a>
+								</li>
+								<li>
+									<a href="https://0xbitcoin.trade/" target="_blank">Uniswap</a>
+								</li>
+								<li>
+									<a href="https://bamboorelay.com/trade/0xBTC-WETH" target="_blank">BambooRelay</a>
+								</li>
+								<li>
+									<a href="https://enclaves.io/trade/0xBTC" target="_blank">Enclaves</a>
+								</li>
+								<li>
+									<a href="https://idex.market/eth/0xbtc" target="_blank">IDEX</a>
+								</li>
+								<li>
+									<a href="https://forkdelta.github.io/#!/trade/0xBTC-ETH" target="_blank">Forkdelta</a>
+								</li>
+								<li>
+									<a href="https://mercatox.com/exchange/0xBTC/ETH" target="_blank">Mercatox</a>
+								</li>
+								<li><a href="https://www.coinexchange.io/market/0xBTC/BTC?r=14503e19" target="_blank">Coinexchange.io</a>
+								</li>
+							</ul>
+						</li>
 						<li>
-            <a href="https://medium.com/0xbitcoinfoundation" target="_blank">Medium</a>
-            </li>
-            <li>
-            <a href="mailto:info@0xbitcoin.foundation" target="_blank">Email us</a>
-            </li>
-          </ul>
-        </li>
-				  <li>
-          <a href="#!">Pools</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="http://mike.rs/" target="_blank">Mikers Pool</a>
-            </li>
-            <li>
-              <a href="http://0xbtc.tosti.ro" target="_blank">Tosti Pool</a>
-            </li>
-            <li>
-              <a href="http://tokenminingpool.com/" target="_blank">Token Mining Pool</a>
-            </li>
-						<li>
-              <a href="http://0xbtc.pool.nocroom.com/" target="_blank">NOCROOM Pool</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#!">Software</a>
-					<ul class="nav-dropdown">
-            <li>
-              <a href="../">CommingSoon</a>
-            </li>
+							<a href="#!">Social</a>
+							<ul class="nav-dropdown">
+								<li>
+									<a href="https://github.com/0xbitcoin" target="_blank">
+									<i class="fab fa-github" style="font-size:20px;color:#fff;"></i>&nbsp;&nbsp;Github
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/0xBTCFoundation" target="_blank">
+										<i class="fab fa-twitter" style="font-size:20px;color:#fff;"></i>&nbsp;&nbsp;Twitter
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/0xBitcoinFoundation" target="_blank">
+											<i class="fab fa-medium" style="font-size:20px;color:#fff;">&nbsp;&nbsp;</i>Medium
+									</a>
+								</li>
+								<li>
+									<a href="https://discordapp.com/invite/xAPwaDC" target="_blank">
+											<i class="fab fa-discord" style="font-size:20px;color:#fff;">&nbsp;&nbsp;</i>Discord
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/ZEROxBTC" target="_blank">
+										<i class="fab fa-telegram-plane" style="font-size:20px;color:#fff;">&nbsp;&nbsp;</i>Telegram
+									</a>
+								</li>
+								<li>
+									<a href="https://www.reddit.com/r/0xbitcoin/" target="_blank">
+											<i class="fab fa-reddit" style="font-size:20px;color:#fff;">&nbsp;&nbsp;</i>Reddit
+									</a>
+								</li>
+							</ul>
+						</li>
 					</ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
+				</nav>
+			</div>
+		</section>
 		<div class="clearfix"></div>
 	</header>
 
@@ -152,67 +172,425 @@
 
 
 
-
-
-	<!--Welcome Area links Start-->
+	<!-- Welcome Area links Start -->
 
 	<section id="welcomeArea">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-xs-12 text-center">
+				<div class="col-lg-12 col-xs-12 col-md-10 text-center">
 					<div class="topcontent">
-						<div class="container">
-
-<div align=center>
-<div class="col-md-8 col-xs-12 col-lg-12" align=center justify-content-center>
-							<a class="nav-item" href="https://medium.com/0xbitcoinfoundation" target="_blank">
-              <img src="app/assets/img/medium2.png" class="shadow hover-effects" style="border-radius: 50% " height="75" width="75">
-              <br>Medium.com</a>
 
 
+						<h1></h1>
+						<div class="col-xs-12 col-lg-12">
+							<div align=center>
+								<a class="nav-item" href="https://medium.com/0xbitcoinfoundation" target="_blank">
+	              <img src="app/assets/img/medium2.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+	              <br>Medium.com</a>
 
-              <a class="nav-item" href="https://discord.gg/JGEqqmS" target="_blank">
-              <img src="app/assets/img/discord.png" class="shadow hover-effects" style="border-radius: 50% " height="75" width="75">
-              <br>Discord Server</a>
+									<a class="nav-item" href="https://discord.gg/JGEqqmS" target="_blank">
+		              <img src="app/assets/img/discord.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+		              <br>Discord Server</a>
 
+									<a class="nav-item" href="https://twitter.com/0xBTCfoundation" target="_blank">
+		              <img src="app/assets/img/twitter.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+								<br>@0xbtcfoundation</a>
 
-
-							<a class="nav-item" href="https://twitter.com/0xBTCfoundation" target="_blank">
-              <img src="app/assets/img/twitter.png" class="shadow hover-effects" style="border-radius: 50% " height="75" width="75">
-						<br>@0xbtcfoundation</a>
-
-
-
-							<a class="nav-item" href="mailto:info@0xbitcoin.foundation" target="_blank">
-                <img src="app/assets/img/email.png" class="shadow hover-effects" style="border-radius: 50% " height="75" width="75">
-							  <br>Email us</a>
-</div>
-</div>
-</div>
-</div>
+									<a class="nav-item" href="mailto:info@0xbitcoin.foundation" target="_blank">
+		                <img src="app/assets/img/email.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+									  <br>Email us</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	<br><br><br>
+	<!-- Welcome Area links End -->
+
+	<style>
+	body {
+	background-image: url("app/assets/img/bg.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
+	}
+	</style>
+
+
+	<!-- Foundation Board members Area Start -->
+	<section class="col-lg-12" id="aboutUs" class="aboutUs">
+
+<div class="container">
+<div class="row justify-content-center">
+
+
+		<div class="shadow p3 mb-5 rounded">
+			<div class="tab-content">
+				<div class="row">
+				  <div class="col-12">
+
+
+
+						<section id="investors">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-md-8 col-lg-12 col-sm-6 col-xs-3 text-center">
+										<div class="heading-title">
+											<h3>
+												<strong>0xBitcoin Foundation Board of Directors</strong>
+											</h3>
+											<div class="sectionSeparator"></div>
+											<p>
+
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f1.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="https://www.reddit.com/user/beeherder">
+																<i class="fab fa-reddit"></i>
+															</a>
+														</li>
+														<li>
+															<a href="mailto:bee@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Brendan Walsh</h5>
+												<p>President</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f2.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="https://twitter.com/brandon_g">
+																<i class="fab fa-twitter"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://www.reddit.com/user/userbrn1">
+																<i class="fab fa-reddit"></i>
+															</a>
+														</li>
+														<li>
+															<a href="mailto:brandon@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Brandon Grill</h5>
+												<p>Vice President</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f3.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="https://twitter.com/mseiler1">
+																<i class="fab fa-twitter"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://www.reddit.com/user/snissn">
+																<i class="fab fa-reddit"></i>
+															</a>
+														</li>
+														<li>
+															<a href="mailto:mike@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Michael Seiler</h5>
+												<p>Second Vice President</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f4.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="https://twitter.com/ge0ffedup">
+																<i class="fab fa-twitter"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://medium.com/@geoffedup">
+																<i class="fab fa-medium"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://github.com/geoffedup">
+																<i class="fab fa-github"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://www.reddit.com/user/geoffedup">
+																<i class="fab fa-reddit"></i>
+															</a>
+														</li>
+														<li>
+															<a href="mailto:geoff@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Geoff Marshall</h5>
+												<p>Secretary</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f5.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="dennis@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Dennis Dee</h5>
+												<p>Treasurer</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f6.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="info@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Jaret Turkell</h5>
+												<p>Member</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f7.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="https://twitter.com/blazehuntley">
+																<i class="fab fa-twitter"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://www.reddit.com/user/blazehuntley">
+																<i class="fab fa-reddit"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://www.linkedin.com/in/mason-doerr2725/">
+																<i class="fab fa-linkedin-in"></i>
+															</a>
+														</li>
+														<li>
+															<a href="mailto:info@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Mason Doerr</h5>
+												<p>Member</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f8.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="https://twitter.com/BlockWolfCrypto">
+																<i class="fab fa-twitter"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://www.youtube.com/channel/UCTwVxyk_CYT1frxduyQy_iw">
+																<i class="fab fa-youtube"></i>
+															</a>
+														</li>
+														<li>
+															<a href="mailto:info@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Jeffrey Littman</h5>
+												<p>Member</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/f9.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="#">
+																<i class="fab fa-twitter"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://www.linkedin.com/in/thomas-mb/">
+																<i class="fab fa-linkedin-in"></i>
+															</a>
+														</li>
+														<li>
+															<a href="mailto:tom@0xbitcoin.foundation">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Thomas Brew</h5>
+												<p>Member</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-lg-3">
+										<div class="box">
+											<div class="image">
+												<img class="img-fluid" src="../app/assets/img/team/toast.png" alt="">
+												<div class="social_icon">
+													<ul>
+														<li>
+															<a href="https://twitter.com/Admazzola">
+																<i class="fab fa-twitter"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://medium.com/@admazzola">
+																<i class="fab fa-medium"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://github.com/admazzola">
+																<i class="fab fa-github"></i>
+															</a>
+														</li>
+														<li>
+															<a href="https://www.reddit.com/user/infernal_toast">
+																<i class="fab fa-reddit"></i>
+															</a>
+														</li>
+														<li>
+															<a href="mailto:admin@0xbitcoin.org">
+																<i class="fas fa-envelope"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<h5>Infernal_Toast</h5>
+												<p>Contract Deployer</p>
+											</div>
+										</div>
+									</div>
+
+					</div>
+				</div>
+			</div>
+								</div>
+
+
+						<!-- Foundation Board members Area End -->
+
+									</div>
+
+</div>
+</div>
+</div>
 </section>
-						<br>
-							<!-- Foundation Board members Area Start -->
+
+<!-- Foundation Board members Area End -->
+
+
+
+
+
+
+	<!-- Foundation Board members Area Start->
+
 	<section id="investors">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-8 col-lg-12 col-sm-6 col-xs-3 text-center">
+				<div class="col-md-10 col-lg-8 text-center">
 					<div class="heading-title">
-						<h3>
-							<strong>0xBitcoin Foundation Board of Directors</strong>
-						</h3>
+						<h2>
+							0xBitcoin Foundation Board
+						</h2>
 						<div class="sectionSeparator"></div>
 						<p>
-
+							listed below are 0xBTC Foundation Board Members who hold a titled position
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-md-4 col-lg-3">
 					<div class="box">
 						<div class="image">
 							<img class="img-fluid" src="app/assets/img/team/1.png" alt="">
@@ -247,12 +625,13 @@
 							</div>
 						</div>
 						<div class="info">
-							<h5>Brandon Grill</h5>
+							<h5>Brandon Grill
+							</h5>
 							<p>First Vice President</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-md-4 col-lg-3">
 					<div class="box">
 						<div class="image">
 							<img class="img-fluid" src="app/assets/img/team/2.png" alt="">
@@ -292,7 +671,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-md-4 col-lg-3">
 					<div class="box">
 						<div class="image">
 							<img class="img-fluid" src="app/assets/img/team/3.png" alt="">
@@ -328,171 +707,11 @@
 						</div>
 						<div class="info">
 							<h5>Dennis Dee</h5>
-							<p>Treasurer</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-3">
-					<div class="box">
-						<div class="image">
-							<img class="img-fluid" src="app/assets/img/team/8.png" alt="">
-							<div class="social_icon">
-								<ul>
-									<li>
-										<a href="#">
-											<i class="fab fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-google-plus-g"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-linkedin-in"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fas fa-envelope"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="info">
-							<h5>Brendan Walsh</h5>
-							<p>President</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-3">
-					<div class="box">
-						<div class="image">
-							<img class="img-fluid" src="app/assets/img/team/5.png" alt="">
-							<div class="social_icon">
-								<ul>
-									<li>
-										<a href="#">
-											<i class="fab fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-google-plus-g"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-linkedin-in"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fas fa-envelope"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="info">
-							<h5>Thomas Brew</h5>
-							<p>Member</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-3">
-					<div class="box">
-						<div class="image">
-							<img class="img-fluid" src="app/assets/img/team/6.png" alt="">
-							<div class="social_icon">
-								<ul>
-									<li>
-										<a href="#">
-											<i class="fab fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-google-plus-g"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-linkedin-in"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fas fa-envelope"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="info">
-							<h5>Jaret Turkell</h5>
-							<p>Member</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-3">
-					<div class="box">
-						<div class="image">
-							<img class="img-fluid" src="app/assets/img/team/7.png" alt="">
-							<div class="social_icon">
-								<ul>
-									<li>
-										<a href="#">
-											<i class="fab fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-google-plus-g"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-linkedin-in"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fas fa-envelope"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="info">
-							<h5>Infernal_Toast</h5>
-							<p>Humble Deployer</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-md-4 col-lg-3">
 					<div class="box">
 						<div class="image">
 							<img class="img-fluid" src="app/assets/img/team/4.png" alt="">
@@ -532,186 +751,178 @@
 						</div>
 					</div>
 				</div>
-			</div>
-
-
-	<!-- Foundation Board members Area End -->
-
-				</div>
-	</section>
-	<!--Welcome Area links End -->
-
-
-
-
-	<!--What is 0xBTC (About area) Start->
-
-	<section id="aboutUs" class="aboutUs">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 d-flex align-self-center">
-					<div class="left">
-						<div class="heading-title">
-							<h2>
-								What is 0xBTC?
-							</h2>
-							<div class="sectionSeparator"></div>
-							<p>
-								We bring the right people together to challenge established
-								thinking and drive transformation. We will show the way to
-								successive. We talk and talk but are you even reading this?
-								I leave you with this... "Don't talk about it be about it!"
-							</p>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/5.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="content">
-
-							<p>
-								There are many variations of passages of Lorem Ipsum
-								available, but the majority have suffered alteration in some
-								form, by injected humour, or randomised words which
-								don't look even slightly believable.
-							</p>
-							<a class="abtn" href="#">
-								???Links???
-							</a>
+						<div class="info">
+							<h5>Jeffrey Littman</h5>
+							<p></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="right">
-						<img class="img-fluid" src="app/assets/img/about.png" alt="">
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/6.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Jaret Turkell</h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/7.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Infernal_Toast</h5>
+							<p>Humble Developer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/8.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5></h5>
+							<p></p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-What is 0xBTC (About area) End-->
+	<!-Foundation Board members Area End -->
 
 
 
 
+	<!--Invest Area Start->
 
-	<!-- Token Stats area Start -->
-	<!--Chart.js: used by Hashrate Graph (hashrate-graph.js)-->
-
-
-<!--Hide token stats start->
-
-	<section id="transaction">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-10 col-lg-8 text-center">
-					<div class="heading-title">
-						<h1>
-							0xBTC Token Stats
-						</h1>
-
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-12">
-					<div class="tab1">
-						<div class="tab-content" id="pills-tabContent">
-							<div class="tab-pane fade show active" id="pills-deposit" role="tabpanel" aria-labelledby="pills-deposit-tab">
-								<div class="table-responsive">
-									<div class="row mx-0" id="mineable-token-stats">
-										<div class="col-md my-3">
-											<table class="mx-auto">
-												<tr>
-													<td align="right">Network Hashrate:</td>
-													<td align="left" style="white-space: nowrap;">{{ readableHashrate }} (Estimate)</td>
-												</tr>
-												<tr>
-													<td align="right">Current Supply:</td>
-													<td align="left" style="white-space: nowrap;">{{ readableTokensMinted }} 0xBTC</td>
-												</tr>
-												<tr>
-													<td align="right">Total Supply:</td>
-													<td align="left" style="white-space: nowrap;">{{ readableTotalSupply }} 0xBTC</td>
-												</tr>
-												<tr>
-													<td align="right">Mining Difficulty:</td>
-													<td align="left" style="white-space: nowrap;">{{ readableDifficulty }}</td>
-												</tr>
-												<tr>
-													<td align="right">Mining Reward:</td>
-													<td align="left" style="white-space: nowrap;">{{ mining_reward }} 0xBTC</td>
-												</tr>
-												<tr>
-													<td align="right">Smart contract calls:</td>
-													<td align="left" style="white-space: nowrap;">{{ readableContractOperations }}</td>
-												</tr>
-											</table>
-										</div>
-										<div class="col-md my-3">
-											<canvas id="chart-hashrate" style="width:765px;height:24em;"></canvas>
-										</div>
-									</div>
-<!-Hide token stats end-->
-
-
-
-
-
-<!--Hide fundraiser bar->
-
-	<div class="container">
-			<div class="row justify-content-center text-center">
-				<div class="col-lg-4">
-									<table class="table">
-									 	<tbody>
-											<tr align=center>
-												<br>
-												<h4>ETH Progress Bar</h4><p>
-													<br>
-													<br>
-												<div class="tab-content" id="pills-tabContent">
-													<div class="tab-pane fade show active" id="pills-deposit" role="tabpanel" aria-labelledby="pills-deposit-tab">
-														<div class="table-responsive">
-																	<div id="fundraiser-progress-container">
-																		<div id="fundraiser-progress">
-																			<div id="fundraiser-progress-bar">0%</div>
-																		</div>
-																	</div>
-
-														</div>
-													</div>
-												</div>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-Hide fundraiser bar END -->
-
-
-
-
-
-
-
-
-
-
-
-
-	<!--Invest Area Start ->
-
-	<section id="investor">
+	<section id="invest">
 		<div class="container">
 			<div class="row justify-content-center text-center">
 				<div class="col-md-10 col-lg-8">
@@ -739,7 +950,7 @@
 								commodo consequat. Duis aute feeirure dolor voluptate
 								velit esse cillum dolore eu fugiat nulla pariatur.
 							</p>
-							<a class="investbtn" href="#">
+							<a class="investb" href="#">
 								!!Link!!
 							</a>
 						</div>
@@ -755,7 +966,6 @@
 	</section>
 
 	<!-Invest Area End-->
-
 
 
 
@@ -868,8 +1078,9 @@
 
 
 
-	<!--Why Should Choose Us Area Start->
 
+
+	<!--Why Should Choose Us Area Start->
 	<section id="wcu">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -975,12 +1186,12 @@
 		</div>
 	</section>
 
-	<!-Why Should Choose Us Area End -->
+	<!-Why Should Choose Us Area End-->
 
 
 
 
-<!--Payment Method Area Start->
+	<!--Payment Method Area Start->
 
 
 	<section id="paymentMethod">
@@ -1050,7 +1261,7 @@
 
 
 
-	<!--Our Package Area Star->
+	<!--Our Package Area Start->
 
 	<section id="package">
 		<div class="container">
@@ -1232,148 +1443,9 @@
 		</div>
 	</section>
 
-	<!-Our Package Area End -->
+	<!-Our Package Area End-->
 
 
-
-
-
-	<!--FAQ Area Start->
-
-	<section id="faq">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-10 col-lg-8 text-center">
-					<div class="heading-title">
-						<h2>
-							0xBitcoin Foundation
-						</h2>
-						<div class="sectionSeparator"></div>
-						<p>
-							Listed below are board memebers who hold a titled position
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="faq-accordian">
-						<div class="panel-group accordion" id="accordionId">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="panel panel-default">
-										<div class="panel-heading" id="headingOne">
-											<h4 class="panel-title">
-												<a class="" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-													How can i get help by inbound marketing?</a>
-											</h4>
-										</div>
-										<div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionId">
-											<div class="panel-body">
-												Digital Marketing Agency all foundational tool need inbound success. With module there no need to go
-												another day. Digital need
-												Marketing Agency all foundational tool need inbound success. With module there no need to go another day.
-												Digital Marketing
-												Agency all foundational tool need inbound success. With module there no need to go another day.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" id="headingTwo">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-													I have questions about the updated trems of
-													Services and Privacy Policy</a>
-											</h4>
-										</div>
-										<div id="collapse2" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionId">
-											<div class="panel-body">
-												Digital Marketing Agency all foundational tool need inbound success. With module there no need to go
-												another day. Digital need
-												Marketing Agency all foundational tool need inbound success. With module there no need to go another day.
-												Digital Marketing
-												Agency all foundational tool need inbound success. With module there no need to go another day.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" id="headingThree">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-													User Guide: Getting Started</a>
-											</h4>
-										</div>
-										<div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionId">
-											<div class="panel-body">
-												Digital Marketing Agency all foundational tool need inbound success. With module there no need to go
-												another day. Digital need
-												Marketing Agency all foundational tool need inbound success. With module there no need to go another day.
-												Digital Marketing
-												Agency all foundational tool need inbound success. With module there no need to go another day.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" id="headingFour">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-													Are you plan to open a brance on Dhaka?</a>
-											</h4>
-										</div>
-										<div id="collapse4" class="collapse" aria-labelledby="headingFour" data-parent="#accordionId">
-											<div class="panel-body">
-												Digital Marketing Agency all foundational tool need inbound success. With module there no need to go
-												another day. Digital need
-												Marketing Agency all foundational tool need inbound success. With module there no need to go another day.
-												Digital Marketing
-												Agency all foundational tool need inbound success. With module there no need to go another day.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" id="headingFive">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-													Are you plan to open a brance on Dhaka?</a>
-											</h4>
-										</div>
-										<div id="collapse5" class="collapse" aria-labelledby="headingFive" data-parent="#accordionId">
-											<div class="panel-body">
-												Digital Marketing Agency all foundational tool need inbound success. With module there no need to go
-												another day. Digital need
-												Marketing Agency all foundational tool need inbound success. With module there no need to go another day.
-												Digital Marketing
-												Agency all foundational tool need inbound success. With module there no need to go another day.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" id="headingSix">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-													Are you plan to open a brance on Dhaka?</a>
-											</h4>
-										</div>
-										<div id="collapse6" class="collapse" aria-labelledby="headingSix" data-parent="#accordionId">
-											<div class="panel-body">
-												Digital Marketing Agency all foundational tool need inbound success. With module there no need to go
-												another day. Digital need
-												Marketing Agency all foundational tool need inbound success. With module there no need to go another day.
-												Digital Marketing
-												Agency all foundational tool need inbound success. With module there no need to go another day.
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-FAQ Area End -->
 
 
 
@@ -1388,31 +1460,41 @@
 				<div class="col-lg-5">
 					<div class="box">
 						<div class="logo">
-							<a href="../foundation">
-							<img width=75 height=75 src="app/assets/img/logo-white.png">0xBitcoin.foundation
+							<a href="#">
+								<img width=75 height=75 src="app/assets/img/logo.png"> 0xBitcoin.org
 							</a>
 						</div>
 
 						<div class="social_links">
 							<ul>
 								<li>
-									<a href="https://www.facebook.com/0xBitcoin/posts/">
-										<i class="fab fa-facebook-f"></i>
+									<a href="https://github.com/0xbitcoin" target="_blank">
+									<i class="fab fa-github" style="font-size:20px;color:#fff;"></i>
 									</a>
 								</li>
 								<li>
-									<a href="https://twitter.com/0xBTCFoundation">
-										<i class="fab fa-twitter"></i>
+									<a href="https://twitter.com/0xBTCFoundation" target="_blank">
+										<i class="fab fa-twitter" style="font-size:20px;color:#fff;"></i>
 									</a>
 								</li>
 								<li>
-									<a href="https://t.me/ZEROxBTC">
-										<i class="fab fa-telegram-plane"></i>
+									<a href="https://medium.com/0xBitcoinFoundation" target="_blank">
+											<i class="fab fa-medium" style="font-size:20px;color:#fff;"></i>
 									</a>
 								</li>
 								<li>
-									<a href="https://www.reddit.com/r/0xbitcoin/">
-										<i class="fab fa-reddit-square"></i>
+									<a href="https://discordapp.com/invite/xAPwaDC" target="_blank">
+											<i class="fab fa-discord" style="font-size:20px;color:#fff;"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/ZEROxBTC" target="_blank">
+										<i class="fab fa-telegram-plane" style="font-size:20px;color:#fff;"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.reddit.com/r/0xbitcoin/" target="_blank">
+											<i class="fab fa-reddit" style="font-size:20px;color:#fff;"></i>
 									</a>
 								</li>
 							</ul>
@@ -1422,33 +1504,24 @@
 				<div class="col-lg-2">
 					<div class="box box2">
 						<h2>
-							Links
+							Navigation
 						</h2>
 						<ul>
 							<li>
-								<a href="../">
-									Overview
-								</a>
+								<a href="../">Overview</a>
 							</li>
 							<li>
-								<a href="../foundation">
-									Foundation page
-								</a>
+								<a href="../foundation">Foundation</a>
 							</li>
 							<li>
-								<a href="../">
-									Software
-								</a>
+								<a href="#top">Top of page</a>
 							</li>
 							<li>
-								<a href="../">
-									Mining
-								</a>
-							</li>
-							<li>
-								<a href="mailto:info@0xbitcoin.foundation">
-									Contact Foundation
-								</a>
+								<strong><font color="#000">Pools</font></strong><br>
+								<a href="http://mike.rs" target="_blank">Mikers Pool</a><br>
+								<a href="http://0xbtc.tosti.ro" target="_blank">Tosti Pool</a><br>
+								<a href="http://tokenminingpool.com/" target="_blank">Token Mining Pool</a><br>
+								<a href="http://0xbtc.pool.nocroom.com/" target="_blank">NOCROOM Pool</a><br>
 							</li>
 						</ul>
 					</div>
@@ -1456,43 +1529,59 @@
 				<div class="col-lg-2">
 					<div class="box box3">
 						<h2>
-							Online
+							Exchanges
 						</h2>
 						<ul>
 							<li>
-								<a href="https://discordapp.com/invite/xAPwaDC">
-									Discord
-								</a>
+								<strong><font color="#000">Decentralized</font></strong><br>
+								<a href="https://www.saturn.network/exchange/ETH/token/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank">Saturn.network</a>
 							</li>
 							<li>
-								<a href="https://twitter.com/0xBTCFoundation">
-									Twitter
-								</a>
+								<a href="https://ethex.market/#0xbtc" target="_blank">Ethex</a>
 							</li>
 							<li>
-								<a href="https://www.reddit.com/r/0xbitcoin/">
-									Reddit
-								</a>
+								<a href="https://0xbitcoin.trade/" target="_blank">Uniswap</a>
 							</li>
 							<li>
-								<a href="https://medium.com/0xbitcoinfoundation">
-									Medium
-								</a>
+								<a href="https://bamboorelay.com/trade/0xBTC-WETH" target="_blank">BambooRelay</a>
+							</li>
+							<li>
+								<a href="https://enclaves.io/trade/0xBTC" target="_blank">Enclaves</a>
+							</li>
+							<li>
+								<a href="https://idex.market/eth/0xbtc" target="_blank">IDEX</a>
+							</li>
+							<li>
+								<a href="https://forkdelta.github.io/#!/trade/0xBTC-ETH" target="_blank">Forkdelta</a>
+							</li>
+							<li>
+								<strong><font color="#000">Centralized</font></strong><br>
+								<a href="https://mercatox.com/exchange/0xBTC/ETH" target="_blank">Mercatox</a>
+							</li>
+							<li><a href="https://www.coinexchange.io/market/0xBTC/BTC?r=14503e19" target="_blank">Coinexchange.io</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-3">
-					<div class="box box4">
+					<div class="box box3">
 						<h2>
-							Contact 0xBTC Foundation
+							Contact
 						</h2>
-						<p>
-
-						</p>
+						<ul>
+							<li>
 						<a href="mailto:info@0xbitcoin.foundation">
+
 							info@0xbitcoin.foundation
 						</a>
+					</li>
+					<li>
+						<a href="mailto:admin@0xbitcoin.org">
+
+							admin@0xbitcoin.org
+						</a>
+					</li>
+				</ul>
 						<a href="#">
 
 						</a>
@@ -1500,9 +1589,20 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="copyright">
-			<p class="text-center">
-				&copy; 2018 0xBitcoin.org
+			<p align=center>
+
+
+			         <font color="#000"><strong>0xBitcoin</strong> Pure-mined ERC20 currency.</font>
+
+			          <br>
+			          The source code is licensed
+			         <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+			         is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+
+
+			   &copy; 2018 0xBitcoin.org
 			</p>
 		</div>
 	</footer>
@@ -1514,11 +1614,11 @@
 
 	<!--Start ClickToTop-->
 
-	<div class="totop">
+<!--hide	<div class="totop">
 		<a href="#top" id="totop"><i class="fa fa-angle-up"></i></a>
 	</div>
 
-
+hide-->
 	<!--End ClickToTop-->
 
 
