@@ -58,8 +58,8 @@ function generateHoldersGraph(holders, minted) {
 
 async function getTokenHolders() {
   return new Promise((resolve, reject) => {
-      $.getJSON('https://api.allorigins.ml/get?url='
-      + encodeURIComponent('https://bloxy.info/api/token/token_holders_list?token=0xb6ed7644c69416d67b522e20bc294a9a9b405b31&limit=1000&key=ACCl2UPf2Pgqi&format=table')
+      $.getJSON('https://api.allorigins.win/get?url='
+      + encodeURIComponent('https://bloxy.info/api/token/token_holders_list?token=0xb6ed7644c69416d67b522e20bc294a9a9b405b31&limit=500&key=ACCl2UPf2Pgqi&format=table')
       + '&callback=?', function(data) {
       resolve(JSON.parse(data.contents));
       });
