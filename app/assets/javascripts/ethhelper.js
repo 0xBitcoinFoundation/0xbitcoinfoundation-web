@@ -1,5 +1,5 @@
-var INFURA_ROPSTEN_URL = 'https://ropsten.infura.io/gmXEVo5luMPUGPqg6mhy';
-var INFURA_MAINNET_URL = 'https://mainnet.infura.io/gmXEVo5luMPUGPqg6mhy';
+var INFURA_ROPSTEN_URL = 'https://ropsten.infura.io/v3/e13ed05a1d0840f487efde90f47c46c8';
+var INFURA_MAINNET_URL = 'https://mainnet.infura.io/v3/e13ed05a1d0840f487efde90f47c46c8';
 
 var deployedContractInfo = require('../contracts/DeployedContractInfo.json');
 var _0xBitcoinContract = require('../contracts/_0xBitcoinToken.json');

@@ -125,7 +125,7 @@ var mineable_token = new Vue({
         console.log('Unknown mineable token address');
         fail;
       }
-      this._eth = new Eth(new Eth.HttpProvider("https://mainnet.infura.io/MnFOXCPE2oOhWpOCyEBT"));
+      this._eth = new Eth(new Eth.HttpProvider("https://mainnet.infura.io/v3/e13ed05a1d0840f487efde90f47c46c8"));
       this._token = this._eth.contract(tokenABI.tokenABI).at(this.address);
 
       this._eth.blockNumber().then((result) => {this.current_eth_block = parseInt(result.toString(10))})
