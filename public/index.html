@@ -1,0 +1,1623 @@
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="zxx">
+<!--<![endif]-->
+
+<head>
+	<style>
+		#fundraiser-progress-container {
+			width: 400px;
+			height: 45px;
+			margin: -15px 0 0 -200px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			color: #4a00ff;
+			text-decoration-color: #00e010;
+			background-color: #4a00ff;
+	}
+	#fundraiser-progress-bar {
+			width: 0%;
+			height: 45px;
+			line-height: 45px; /* center text vertically; should match height */
+			background-color: #00e010;
+			color: #4a00ff;
+	}
+	</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title> 0xBitcoin </title>
+	<!--Favicon-->
+	<link rel="shortcut icon" type="image/png" href="app/assets/img/favicon.png" />
+	<!--Bootstrap Stylesheet-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<link href="/app/assets/main.49daa1832bc812d00d2b.css" rel="stylesheet"></head>
+
+<body class="body-class">
+	<!--Start Preloader-->
+	<div class="site-preloader">
+		<div class="spinner">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+	</div>
+
+	<!--End Preloader-->
+
+
+
+	<!-- Main Menu header Area & navbar Start -->
+
+	<header id="mainHeader" class="header">
+
+
+		<section class="navigation">
+
+			<div class="nav-container">
+				<div class="navbar-brand">
+					<a class="navbar-brand" href="../">
+						<img width=55 height=55 src="app/assets/img/logo.svg">
+						<font color="#ffffff">0xBitcoin</font>
+					</a>
+				</div>
+				<nav>
+					<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+					<ul class="nav-list">
+						<li>
+							<a href="../">Overview</a>
+						</li>
+						<li>
+							<a href="../foundation">Foundation</a>
+						</li>
+						<li>
+							<a href="#!">Pools</a>
+							<ul class="nav-dropdown">
+								<li>
+									<a href="http://mike.rs/" target="_blank">Mikers Pool</a>
+								</li>
+								<li>
+									<a href="http://0xbtc.tosti.ro" target="_blank">Tosti Pool</a>
+								</li>
+								<li>
+									<a href="http://tokenminingpool.com/" target="_blank">Token Mining Pool</a>
+								</li>
+								<li>
+									<a href="http://0xbtc.pool.nocroom.com/" target="_blank">NOCROOM Pool</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#!">Exchanges</a>
+							<ul class="nav-dropdown">
+								<li>
+									<a href="https://www.saturn.network/exchange/ETH/token/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank">Saturn.network</a>
+								</li>
+								<li>
+									<a href="https://ethex.market/#0xbtc" target="_blank">Ethex</a>
+								</li>
+								<li>
+									<a href="https://0xbitcoin.trade/" target="_blank">Uniswap</a>
+								</li>
+								<li>
+									<a href="https://enclaves.io/trade/0xBTC" target="_blank">Enclaves</a>
+								</li>
+								<li>
+									<a href="https://idex.market/eth/0xbtc" target="_blank">IDEX</a>
+								</li>
+								<li>
+									<a href="https://forkdelta.github.io/#!/trade/0xBTC-ETH" target="_blank">Forkdelta</a>
+								</li>
+								<li>
+									<a href="https://mercatox.com/exchange/0xBTC/ETH" target="_blank">Mercatox</a>
+								</li>
+								<li><a href="https://www.coinexchange.io/market/0xBTC/BTC?r=14503e19" target="_blank">Coinexchange.io</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#!">Social</a>
+							<ul class="nav-dropdown">
+								<li>
+									<a href="https://github.com/0xbitcoin" target="_blank">
+									<i class="fab fa-github" style="font-size:20px;color:#fff;"></i>&nbsp;&nbsp;Github
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/0xBTCFoundation" target="_blank">
+										<i class="fab fa-twitter" style="font-size:20px;color:#fff;"></i>&nbsp;&nbsp;Twitter
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/0xBitcoinFoundation" target="_blank">
+											<i class="fab fa-medium" style="font-size:20px;color:#fff;">&nbsp;&nbsp;</i>Medium
+									</a>
+								</li>
+								<li>
+									<a href="https://discordapp.com/invite/xAPwaDC" target="_blank">
+											<i class="fab fa-discord" style="font-size:20px;color:#fff;">&nbsp;&nbsp;</i>Discord
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/ZEROxBTC" target="_blank">
+										<i class="fab fa-telegram-plane" style="font-size:20px;color:#fff;">&nbsp;&nbsp;</i>Telegram
+									</a>
+								</li>
+								<li>
+									<a href="https://www.reddit.com/r/0xbitcoin/" target="_blank">
+											<i class="fab fa-reddit" style="font-size:20px;color:#fff;">&nbsp;&nbsp;</i>Reddit
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<div class="clearfix"></div>
+	</header>
+
+	<!-- Main Menu header Area & navbar End -->
+
+
+
+	<!-- Welcome Area links Start -->
+
+	<section id="welcomeArea">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12 col-xs-12 col-md-10 text-center">
+					<div class="topcontent">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 align-self-center">
+									<div class="left">
+										<h2>Pure Mined Currency</h2>
+										<h4>The first pure mined ERC20 token
+											<br>for Ethereum applications</h4>
+									</div>
+								</div>
+								<div class="col-md-5 align-self-center col-sm-flex">
+									<div class="center">
+										<img width="339" heigh="250" src="app/assets/img/mine.gif" class="img-fluid" alt="Responsive image">
+								</div>
+							</div>
+						</div>
+
+							<div class="col-xs-12 col-lg-12">
+								<div align=center>
+									<a class="nav-item" href="https://metamask.io" target="_blank">
+										<img src="app/assets/img/metamask.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+										<br>Metamask</a>
+
+									<a class="nav-item" href="https://0xbitcoin.org/wallet" target="_blank">
+										<img src="app/assets/img/logo-white.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+										<br>WebWallet</a>
+
+									<a class="nav-item" href="https://trustwalletapp.com/" target="_blank">
+										<img src="app/assets/img/trust.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+										<br>TrustWallet</a>
+
+									<a class="nav-item" href="https://0xbitcoin.trade/" target="_blank">
+										<img src="app/assets/img/uniswap.png" class="shadow hover-effects" style="border-radius: 50% " height="90" width="90">
+										<br>Uniswap</a>
+								</div>
+							</div>
+
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="app/assets/img/bzxquote1.png" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="carousel-item">
+      <img src="app/assets/img/compoundquote.png" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="carousel-item">
+      <img src="app/assets/img/audit.png" class="img-fluid" alt="Responsive image">
+    </div>
+  </div>
+</div>
+
+
+						</div>
+
+						<h1></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br><br><br>
+	<!-- Welcome Area links End -->
+
+
+	<!--What is 0xBTC (About area) Start-->
+	<div>
+	</div>
+
+	<style>
+	body {
+	background-image: url("app/assets/img/bg.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
+	}
+	</style>
+
+	<section class="col-lg-12" id="aboutUs" class="aboutUs">
+
+<div class="container">
+<div class="row justify-content-center">
+
+  <div class="col-sm-8">
+		<div class="shadow p3 mb-5 rounded">
+			<div class="tab-content">
+				<div class="row">
+				  <div class="col-12">
+
+
+
+<div class="card">
+<div class="card-header">
+	<ul class="nav nav-tabs" id="pills-tab" role="tablist">
+	  <li class="nav-item">
+	    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">What is 0xBTC?</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="pills-tokenmining-tab" data-toggle="pill" href="#pills-tokenmining" role="tab" aria-controls="pills-profile" aria-selected="false">Token Mining</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="pills-software-tab" data-toggle="pill" href="#pills-software" role="tab" aria-controls="pills-contact" aria-selected="false">Software</a>
+	  </li>
+		<li class="nav-item">
+	    <a class="nav-link" id="pills-918-tab" data-toggle="pill" href="#pills-918" role="tab" aria-controls="pills-contact" aria-selected="false">EIP-918</a>
+	  </li>
+		<li class="nav-item">
+	    <a class="nav-link" id="pills-links-tab" data-toggle="pill" href="#pills-links" role="tab" aria-controls="pills-home" aria-selected="true">Links</a>
+	  </li>
+	</ul>
+
+
+<div class="card-body">
+		<div class="tab-content" id="pills-tabContent">
+
+
+	  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="card-text">
+			<h5 class="card-title">What is 0xBTC?</h5>
+
+
+				<font size=5>Contract address</font><br> <a href="https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank"><code><font color="#004cbf">0xB6eD7644C69416d67B522e20bC294A9a9B405B31</font></code></a>
+				<br><br>
+				<font size=5>0xBitcoin contract code<br></font><a href="http://github.com/0xbitcoin" target="_blank"><code><font color="#004cbf">http://github.com/0xbitcoin</font></code></a>
+				<br><br>
+			<p>
+				<a style="color:#ff7f00">
+					<a href="https://0xbitcoin.org" style="color:#ff7f00" target="_blank">0xBitcoin (0xBTC)</a> is the first
+					mineable ERC20 token on Ethereum. It uses mining for distribution,
+					unlike all previous ERC20 tokens which were assigned to the contract
+					deployer upon creation. 0xBTC is the first implementation of the EIP918
+					mineable token standard
+					(<a href="https://eips.ethereum.org/EIPS/eip-918" style="color:#ff7f00" target="_blank" target="_blank">https://eips.ethereum.org/EIPS/eip-918</a>),
+					which opened up the possibility of a whole new class of mineable assets
+					on Ethereum. Without any ICO, airdrop, pre-mine, or founder’s reward,
+					0xBitcoin is arguably the most decentralized asset in the Ethereum
+					ecosystem, including even Ether (ETH), which had a large ICO.
+
+			</p>
+			<p><br></p>
+			<p>
+
+				The goal of <a href="https://0xbitcoin.org" style="color:#ff7f00" target="_blank">0xBitcoin</a> is to be
+				looked at as a currency and store of value asset on Ethereum. Its 21
+				million token hard cap and predictable issuance give it scarcity and
+				transparency in terms of monetary policy, both things that Ether lacks.
+				0xBitcoin has certain advantages over PoW based currencies, such as
+				compatibility with smart contracts and decentralized exchanges. In
+				addition, 0xBTC <strong>
+					<font style="color:red"><i>cannot be 51% attacked</i></font>
+				</strong> <i>(without attacking Ethereum)</i>, is
+				immune from the “death spiral”, and will receive the benefits of scaling
+				and other improvements to the Ethereum network.
+				</a>
+			</p>
+</div>
+
+		</div>
+
+
+ <div class="tab-pane fade" id="pills-918" role="tabpanel" aria-labelledby="pills-918-tab">
+
+			<h5 class="card-title">EIP:918 Mineable Token standard</h5>
+<div class="card-text">
+  <div class="mygrid-wrapper-div">
+
+<strong>What is ERC918?</strong>
+<br><br>
+<p>ERC918 is an Ethereum Improvement Proposal for standardizing mineable token distribution using Proof of Work.</p>
+<br>
+<p>The primary driver behind the standard is to address the very broken ICO model that currently plagues the Ethereum network. Token distribution via the ICO model and it’s derivatives has always been susceptible to illicit behavior by bad actors. New token projects are centralized by nature because a single entity must handle and control all of the initial coins and all of the the raised ICO money. By distributing tokens via an alternative ‘Initial Mining Offering’ (or IMO), the ownership of the token contract no longer belongs with the deployer at all and the deployer is ‘just another user.’ As a result, investor risk exposure utilizing a mined token distribution model is significantly diminished. This standard is intended to be standalone, allowing maximum interoperability with ERC20, ERC721, and future token standards.</p>
+<br>
+<p>The most effective economic side effect of Satoshi Nakamoto's desire to secure the original Bitcoin network with Proof of Work hash mining was tethering the coin to real computing power, thereby removing centralized actors. Transitioning the responsibility of work back onto individual miners, government organizations have no jurisdiction over the operation of a pure mined token economy. Oversight is removed from an equation whereby miners are providing economic effort in direct exchange of a cryptographic commodity. This facilitates decentralized distribution and establishes all involved parties as stakeholders. The ERC918 standard allows projects to be funded through decentralized computing power instead of centralized, direct-fiat conversion.</p>
+<br>
+<p>The Ethereum blockchain in its current state exists as a thriving ecosystem which allows any individual to store immutable records in a permission-less, invulnerable and transparent manner. Recently, there have been proposals to mitigate some initial ICO investment risks through the introduction of the DAICO model that relies on timed and automated value transfers via the smart contract tapping mechanism. However, this does not align a token smart contract as a non-security and still has the potential to put investors at risk if not implemented carefully, relying on centralized actors to be fair and community intended. Allowing users of the network direct access to tokens by performing computations as a proof of work supplies allows any smart contract to distribute a token in a safe and controlled manner similar to the release of a commodity.<p>
+<br>
+<p>As of 2017, all Ethereum token distribution methods were flawed and susceptible to Sybil attacks. A Sybil attack is a form of computer security attack where one person pretends to be many people with multiple computer accounts in order to manipulate a system in a malicious way. ICOs and airdrops are highly susceptible to these type of attacks so there is no way to verify that all ERC20 tokens distributed by the deployer were doled out fairly or unfairly. Proof of Work distribution is resistant to Sybil attacks. This means that ERC918 tokens are among the first trustless Ethereum tokens in the world. The distribution of ERC918 tokens is fair because they are allotted via an open, decentralized mathematical algorithm (that anyone can view on the mainnet blockchain) and not a centralized human monarchy.</p>
+<br>
+<p>ERC918's first incarnation (and inspiration) was the 0xBitcoin project that launched in early 2018. Since then, several projects have realized the standard in innovative and creative ways. Catether (0xCATE) erupted early and additionally mints payback tokens during transfer operations to offset gas costs. 0xGold and 0xLitecoin each implement the first on-chain merge-mining with 0xBitcoin and the Mineable Gem project extends the standard onto a non-fungible collectible artifacts, whereby each gem has a unique mining difficulty. The Mineables project is a newer initiative that provides users with the ability to create mineable ERC20 tokens on-chain without writing a line of code and includes a virtualized hashing artifact market that allows miners to purchase on-chain vGPUs to improve mining difficulty and rewards.</p>
+
+
+	</div>
+</div>
+
+		</div>
+
+
+	  <div class="tab-pane fade" id="pills-tokenmining" role="tabpanel" aria-labelledby="pills-tokenmining-tab">
+
+
+			<h5 class="card-title">Token Mining</h5>
+			<div class="mygrid-wrapper-div">
+<div class="card-text">
+<div id=mining>
+	<strong>MINING IN A NUTSHELL</strong>
+	<p>0xBitcoin is a Smart Contract on the Ethereum network, and the concept of Token Mining is patterned after Bitcoin’s distribution. Rather than solving ‘blocks’, work is issued by the contract, which also maintains a Difficulty which goes up or down depending on how often a Reward is issued. Whenever a miner submits a solution, the miner must pay a small gas fee in order to execute the Ethereum smart contract code for the mint() function. If the gas fee is too low, the solution will take too long to be mined and if difficulty is not at equilibrium then another mint() solution from another miner will likely be mined first. This renders the original miners solution invalid and the transaction will revert(). To alleviate gas fees for miners, they can instead mine into a pool. This way, the pool will then submit the solutions to the smart contract and pay a gas fee. Then the pool will typically take a small percent of the rewards and give the rest to the miner for providing the PoW solution.</p>
+	<p>The 0xBitcoin contract was deployed by Infernal_Toast at Ethereum address: <a href="https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank">0xb6ed7644c69416d67b522e20bc294a9a9b405b31</a></p>
+	<ul>
+	<li><strong>MINING IN MORE DETAIL</strong></li>
+	</ul>
+	<p>0xBitcoin’s smart contract, running on the Ethereum network, maintains a changing “Challenge” (that is generated from the previous Ethereum block hash) and an adjusting Difficulty Target. Like traditional mining, the miners use the SoliditySHA3 algorithm to solve for a Nonce value that, when hashed alongside the current Challenge and their Minting Ethereum Address, is less-than-or-equal-to the current Difficulty Target. Once a miner finds a solution that satisfies the requirements, they can submit it into the contract (calling the Mint() function). This is most often done through a mining pool. The Ethereum address that submits a valid solution first is sent the 50 0xBTC Reward.</p>
+	<p>(In the case of Pools, valid solutions that do not satisfy the full difficulty specified by the 0xBitcoin contract, but that DO satisfy the Pool’s specified Minimum Share Difficulty, get a ‘share’. When one of the Miners on that Pool finds a “Full” solution, the number of shares each miner’s address has submitted is used to calculate how much of the 50 0xBTC reward they will get. After a Reward is issued, the Challenge changes.</p>
+	<ul>
+	<li><strong>HOW DIFFICULTY ADJUSTMENT WORKS</strong></li>
+	</ul>
+	<p>A Retarget happens every <code>1024</code> rewards. In short, the Contract tries to target an Average Reward Time of about 60 times the Ethereum block time. So (at the time of this writing):</p>
+	<p><code>~13.9 seconds \* 60 = 13.9 minutes</code></p>
+	<p>If the average Reward Time is longer than that, the difficulty will decrease. If it’s shorter, it will increase. How much longer or shorter it was affects the magnitude with which the difficulty will rise/drop, to a maximum of 50%.<br />
+	<a href="https://0x1d00ffff.github.io/0xBTC-Stats/" target="_blank">Click Here</a> to visit the stats page <a href="https://0x1d00ffff.github.io/0xBTC-Stats/" target="_blank">https://0x1d00ffff.github.io/0xBTC-Stats</a></p>
+</div>
+
+</div>
+</div>
+		</div>
+	  <div class="tab-pane fade" id="pills-software" role="tabpanel" aria-labelledby="pills-software-tab">
+
+			<h5 class="card-title">Mining Software</h5>
+			      <div class="card-text">
+  <div class="mygrid-wrapper-div">
+						<ul>
+						<li><strong>MINING SOFTWARE</strong></li>
+					 </ul>
+							<p>For the most up-to-date version info, download links, thread links and author contact information, please see <a href="https://www.reddit.com/r/0xbitcoin/comments/8o06dk/links_to_the_newestbest_miners_for_nvidia_amd/" target="_blank">this Thread HERE.</a> Keep up to date for the latest speed, stability and feature enhancements!</p>
+
+							<ul>
+							<li><strong><a href="https://bitbucket.org/LieutenantTofu/cosmic-v3/downloads/" target="_blank">COSMiC Miner by LtTofu:</a></strong></li>
+							<ul>
+
+							<p>V4.x versions are a near-total ‘Modern’ C++ rewrite/redesign for 64-bit Windows, built for speed, ease-of-use and stability. It supports nVidia/CUDA devices and Pool Mining. Solo/CPU mining both planned. Features a fully-integrated GUI, numerous optimizations assembly functions for speed (nicknamed ‘Hashburner’), and supports multiple GPUs running in a single instance since v4.1. Auto-Donation/devfee of 1.5% (default of 1.5%.) Under active development!
+							<a href="https://bitbucket.org/LieutenantTofu/cosmic-v3/downloads/" target="_blank"><b>-COSMiC Miner 3.4t by LtTofu:</b></a> A fork of 0xBitcoin-Miner designed for enhanced speed and less invalid shares at the Pool level. It is somewhat older and is built using a combination of NodeJS/C++/CUDA. It has versions available for 64-bit Windows and Linux and runs from a command-line interface. Comes in multiple versions with 1, 1.5 or 2% “Auto-Donation”/devfee. Not under development at this time, but still relevant.</p>
+
+							<strong><a href="https://github.com/lwYeo/SoliditySHA3Miner/releases" target="_blank">SoliditySha3Miner by Amano7:</a></strong>
+
+							<p>A Command-Line Interface miner that aims to provide functionality similar to that of “CCMiner” for other algorithms for 0xBitcoin and other ERC-918s. As such, it offers an API for integrating with Mining management software and integration with HiveOS &amp; EthOS. It also supports OpenCL devices (such as AMD cards and Intel IGPs.) Has a minimum Auto-Donation/devfee of 1.5% (with a default of 2.0%.) Under active development!
+							</p>
+							<strong><a href="https://aiominer.com/" target="_blank">AIOMiner All-In-One GPU Miner:</a></strong>
+							<p>
+							AIOMiner is an All-In-One GPU Mining software for Windows that boasts support for over 55 different algorithms, is free to use, and eliminates the need to configure batch files through its easy to use interface.
+						</p>
+							<strong><a href="https://github.com/mining-visualizer/MVis-tokenminer/releases" target="_blank">TokenMiner by MVis (Mining-Visualizer):</a></strong>
+							<p>
+							TokenMiner is based upon Genoil Ethminer and was the first to add support for OpenCL devices (AMD GPUs/APUs.) It supports CPU and Pool/Solo mining from its command-line interface (in -C or -G, -S or -P modes.) It can also mine on nVidia/CUDA cards (in OpenCL mode, albeit with lesser performance.) Has a 1% “devfee” running in Pool Mode. This miner has since been forked for compatibility with some FPGAs!
+						</p>
+							<strong><a href="https://github.com/azlehria/nabiki" target="_blank">“Nabiki”/2.10.4 by Azlehria:</a></strong>
+							<p>
+							v2.10.4 is an enhancement of the original 0xBitcoin-Miner with CUDA support added by Mikers and enhanced by Azlehria. “Nabiki” is a C++-only version, with no NodeJS code, which supports Pool Mining (just not Solo) and works on Windows 64-bit and Linux. Source code is available with pre-packaged binaries and a GUI in the works. Has a 2.5% “devfee”. Under active development!
+						</p>
+							~<em>Older Miners: Older and possibly-unsupported miner versions can be found at the above link for historical purposes and specific applications- including the original NodeJS CPU miner by Infernal Toast/Zegordo, the ‘1000x’ NodeJS/C++ hybrid version of 0xBitcoin-Miner and Mikers’ enhanced CUDA builds.</font></em>
+
+						</div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="pills-links" role="tabpanel" aria-labelledby="pills-links-tab">
+<div class="card-text">
+	<h5 class="card-title">Useful Links</h5>
+<div class="mygrid-wrapper-div">
+
+	coming soon
+</div>
+</div>
+
+</div>
+
+
+		</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="row justify-content-center">
+
+<div class="col-lg-12">
+	<div class="tab-content">
+<div class="heading-title text-center">
+
+
+									<font size=6 color=#0059a2>{{ readableHashrate }}</font>
+
+
+						<canvas id="chart-hashrate" align="center" style="position: relative; height:50vh; max-width:75vh%"></canvas>
+					</div>
+					</div>
+
+				</div>
+			</div>
+
+	</div>
+</div>
+
+
+<b class="tab-content shadow p3 mb-5 rounded">
+	<table class="table" class="row justify-content-center" style="background="fff>
+  <tbody>
+		<tr>
+		<th align="center">
+				<font size=6 color=#000000>Token Stats
+					<hr>
+				</font>
+			</th>
+		</tr>
+
+    <tr>
+      <th bgcolor="#ff7f00">
+			<font size=4 color=#000000>Tokens Minted</font><br>
+
+				<font size=5 color=#fff>{{ readableTokensMinted }} / {{ readableTotalSupply }}</font>
+			</th>
+    </tr>
+		<tr>
+		<th bgcolor="#ff7f00">
+			<font size=4 color=#000000>Network Hashrate</font><br>
+
+			<font size=5 color=#fff>{{ readableHashrate }}</font>
+			</th>
+    </tr>
+		<tr>
+			<th bgcolor="#ff7f00">
+			<font size=4 color=#000000>Total Supply</font><br>
+
+				<font size=5 color=#fff>{{ readableTotalSupply }} 0xBTC</font>
+			</th>
+    </tr>
+		<tr>
+			<th bgcolor="#ff7f00">
+			<font size=4 color=#000000>Mining Difficulty</font><br>
+
+				<font size=5 color=#fff>{{ readableDifficulty }}</font>
+			</th>
+    </tr>
+		<tr>
+			<th bgcolor="#ff7f00">
+			<font size=4 color=#000000>Mining Reward</font><br>
+
+				<font size=5 color=#fff>{{ mining_reward }} 0xBTC</font>
+			</th>
+    </tr>
+		<tr>
+			<th bgcolor="#ff7f00">
+			<font size=4 color=#000000>Smart Contract Calls</font><br>
+
+				<font size=5 color=#fff>{{ readableContractOperations }}</font>
+
+			</th>
+    </tr>
+
+		<tr>
+			<td>
+				<hr>
+				<font size=6 color="#000"><b>Token Distribution</b></font><br>
+				<b><font class="wallets" size=4></font></b><br>
+				<font size=2><strong>Top 1000 shown</strong></font>
+				<br>
+					<p align="center"><canvas id="pie-holders" align="center" style="position: relative; height:40vh; max-width:40vh"></canvas></p>
+				</td>
+			</tr>
+
+
+
+			</tbody>
+			</table>
+
+
+	</div>
+
+
+
+
+
+
+</div>
+</b>
+
+
+
+	</section>
+
+
+	<!--What is 0xBTC (About area) End-->
+
+
+
+
+
+
+	<!-- Foundation Board members Area Start->
+
+	<section id="investors">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 text-center">
+					<div class="heading-title">
+						<h2>
+							0xBitcoin Foundation Board
+						</h2>
+						<div class="sectionSeparator"></div>
+						<p>
+							listed below are 0xBTC Foundation Board Members who hold a titled position
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/1.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Brandon Grill
+							</h5>
+							<p>First Vice President</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/2.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Michael Seiler</h5>
+							<p>Second Vice President</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/3.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Dennis Dee</h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/4.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Geoff Marshall</h5>
+							<p>Secretary</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/5.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Jeffrey Littman</h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/6.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Jaret Turkell</h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/7.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Infernal_Toast</h5>
+							<p>Humble Developer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="app/assets/img/team/8.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5></h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-Foundation Board members Area End -->
+
+
+
+
+	<!--Invest Area Start->
+
+	<section id="invest">
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-md-10 col-lg-8">
+					<div class="heading-title">
+						<h2>
+						 Hey hey hey! More jibberish
+						</h2>
+						<div class="sectionSeparator"></div>
+						<p>
+							ya don't read this, you are seriously wasting your time.
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 d-flex align-self-center">
+					<div class="left">
+						<div class="box">
+							<h3>
+								Another box for something else
+							</h3>
+							<p>
+								Quis nostrud exercitation ullamco laboris nisi utaliquip
+								commodo consequat. Duis aute feeirure dolor voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur.
+							</p>
+							<a class="investb" href="#">
+								!!Link!!
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="right">
+						<img class="img-fluid" src="app/assets/img/invest.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-Invest Area End-->
+
+
+
+	<!--Feature Area Start->
+
+	<section id="feature">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box">
+						<div class="topHeader d-flex">
+							<i class="far fa-lightbulb"></i>
+							<div class="title d-flex align-self-center">
+								<div class="title d-flex align-self-center">
+									<h3>
+										We Innovate
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="body">
+							<div class="content">
+								<p>
+									We innovate systematically, continuously and successfully
+									innovate systematically, continuously
+								</p>
+								<a href="#">
+									Read More
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box">
+						<div class="topHeader d-flex">
+							<i class="far fa-file-alt"></i>
+							<div class="title d-flex align-self-center">
+								<h3>
+										Licensed & Certified
+								</h3>
+							</div>
+						</div>
+						<div class="body">
+							<div class="content">
+								<p>
+									We innovate systematically, continuously and successfully
+									innovate systematically, continuously
+								</p>
+								<a href="#">
+									Read More
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box">
+						<div class="topHeader d-flex">
+							<i class="fas fa-chalkboard-teacher"></i>
+							<div class="title d-flex align-self-center">
+								<h3>
+										We are Professional
+								</h3>
+							</div>
+						</div>
+						<div class="body">
+							<div class="content">
+								<p>
+									We innovate systematically, continuously and successfully
+									innovate systematically, continuously
+								</p>
+								<a href="#">
+									Read More
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box">
+						<div class="topHeader d-flex">
+							<i class="fas fa-piggy-bank"></i>
+							<div class="title d-flex align-self-center">
+								<h3>
+										Saving & Investments
+								</h3>
+							</div>
+						</div>
+						<div class="body">
+							<div class="content">
+								<p>
+									We innovate systematically, continuously and successfully
+									innovate systematically, continuously
+								</p>
+								<a href="#">
+									Read More
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-Feature Area End-->
+
+
+
+
+
+
+
+	<!--Why Should Choose Us Area Start->
+	<section id="wcu">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 text-center">
+					<div class="heading-title">
+						<h2>
+							Why Should Choose Us
+						</h2>
+						<div class="sectionSeparator"></div>
+						<p>
+							We bring the right people together to challenge established thinking and drive transformation.
+							We will show the way to successive.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box">
+						<div class="img">
+
+						</div>
+						<div class="content">
+							<h3>
+								Stable & Profitable
+							</h3>
+							<p>
+								Effective business support planning becomes one of the
+								most critical activities within successful small business
+								maintenance and development.Accure provides best
+								affordable plan to earn money.
+							</p>
+							<a class="viweBtn" href="#">
+								View Plan
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box">
+						<div class="img">
+
+						</div>
+						<div class="content">
+							<h3>
+								Stable & Profitable
+							</h3>
+							<p>
+								Effective business support planning becomes one of the
+								most critical activities within successful small business
+								maintenance and development.Accure provides best
+								affordable plan to earn money.
+							</p>
+							<a class="viweBtn" href="#">
+								View Plan
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box">
+						<div class="img">
+
+						</div>
+						<div class="content">
+							<h3>
+								Stable & Profitable
+							</h3>
+							<p>
+								Effective business support planning becomes one of the
+								most critical activities within successful small business
+								maintenance and development.Accure provides best
+								affordable plan to earn money.
+							</p>
+							<a class="viweBtn" href="#">
+								View Plan
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box">
+						<div class="img">
+
+						</div>
+						<div class="content">
+							<h3>
+								Stable & Profitable
+							</h3>
+							<p>
+								Effective business support planning becomes one of the
+								most critical activities within successful small business
+								maintenance and development.Accure provides best
+								affordable plan to earn money.
+							</p>
+							<a class="viweBtn" href="#">
+								View Plan
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-Why Should Choose Us Area End-->
+
+
+
+
+	<!--Payment Method Area Start->
+
+
+	<section id="paymentMethod">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 text-center">
+					<div class="heading-title">
+						<h2>
+							We Accepted Payment Method
+						</h2>
+						<div class="sectionSeparator"></div>
+						<p>
+							We bring the right people together to challenge established thinking and drive transformation.
+							We will show the way to successive.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row paypatner">
+				<div class="col-12 text-center">
+
+
+				</div>
+			</div>
+			<div class="row calculate justify-content-center">
+				<div class="col-md-10 col-lg-8">
+					<div class="box">
+						<h3>
+							Calculate Your Profit
+						</h3>
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-row">
+										<div class="form-group col-md-12">
+											<label>Enter Ammount :</label>
+											<input type="text" class="myForn" placeholder="10">
+										</div>
+										<div class="form-group col-md-12">
+											<label>Net Profit :</label>
+											<input type="text" class="myForn" placeholder="$5">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-row">
+										<div class="form-group col-md-12">
+											<label>Total Profit :</label>
+											<input type="text" class="myForn" placeholder="$15">
+										</div>
+										<div class="form-group col-md-12">
+											<button type="submit">Continue</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-Payment Method Area End-->
+
+
+
+
+
+	<!--Our Package Area Start->
+
+	<section id="package">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 text-center">
+					<div class="heading-title">
+						<h2>
+							Grab Our Mega Package
+						</h2>
+						<div class="sectionSeparator"></div>
+						<p>
+							We bring the right people together to challenge established thinking and drive transformation.
+							We will show the way to successive.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="priceBox normal">
+						<div class="header">
+							<h3>
+								Basic Plan
+							</h3>
+							<h5>
+								Features
+							</h5>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<p>Minimum Deposit $10
+									</p>
+								</li>
+								<li>
+									<p>
+										Miximum Deposit $10,000
+
+									</p>
+								</li>
+								<li>
+									<p>
+										Enhanced security
+									</p>
+								</li>
+								<li>
+									<p>
+										Access to all features
+									</p>
+								</li>
+								<li>
+									<p>
+										24/7Support
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="footer">
+							<h3>
+								5.50%
+							</h3>
+							<p>/ Month</p>
+						</div>
+						<div class="button">
+							<a href="#">
+								Start Now
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 pBoxPopularR">
+					<div class="pBoxPopular">
+						<p>Most Popular</p>
+					</div>
+					<div class="priceBox meddel">
+						<div class="header">
+							<h3>
+								Basic Plan
+							</h3>
+							<h5>
+								Features
+							</h5>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<p>Minimum Deposit $10
+									</p>
+								</li>
+								<li>
+									<p>
+										Miximum Deposit $10,000
+
+									</p>
+								</li>
+								<li>
+									<p>
+										Enhanced security
+									</p>
+								</li>
+								<li>
+									<p>
+										Access to all features
+									</p>
+								</li>
+								<li>
+									<p>
+										24/7Support
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="footer">
+							<h3>
+								6.50%
+							</h3>
+							<p>/ Month</p>
+						</div>
+						<div class="button">
+							<a href="#">
+								Start Now
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="priceBox normal">
+						<div class="header">
+							<h3>
+								Basic Plan
+							</h3>
+							<h5>
+								Features
+							</h5>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<p>Minimum Deposit $10
+									</p>
+								</li>
+								<li>
+									<p>
+										Miximum Deposit $10,000
+
+									</p>
+								</li>
+								<li>
+									<p>
+										Enhanced security
+									</p>
+								</li>
+								<li>
+									<p>
+										Access to all features
+									</p>
+								</li>
+								<li>
+									<p>
+										24/7Support
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="footer">
+							<h3>
+								6.50%
+							</h3>
+							<p>/ Month</p>
+						</div>
+						<div class="button">
+							<a href="#">
+								Start Now
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-Our Package Area End-->
+
+
+
+
+
+
+
+	<!-- Footer Area Start -->
+
+	<footer id="footer">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="box">
+						<div class="logo">
+							<a href="#">
+								<img width=75 height=75 src="app/assets/img/logo.png"> 0xBitcoin.org
+							</a>
+						</div>
+
+						<div class="social_links">
+							<ul>
+								<li>
+									<a href="https://github.com/0xbitcoin" target="_blank">
+									<i class="fab fa-github" style="font-size:20px;color:#fff;"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/0xBTCFoundation" target="_blank">
+										<i class="fab fa-twitter" style="font-size:20px;color:#fff;"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/0xBitcoinFoundation" target="_blank">
+											<i class="fab fa-medium" style="font-size:20px;color:#fff;"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://discordapp.com/invite/xAPwaDC" target="_blank">
+											<i class="fab fa-discord" style="font-size:20px;color:#fff;"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/ZEROxBTC" target="_blank">
+										<i class="fab fa-telegram-plane" style="font-size:20px;color:#fff;"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.reddit.com/r/0xbitcoin/" target="_blank">
+											<i class="fab fa-reddit" style="font-size:20px;color:#fff;"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="box box2">
+						<h2>
+							Navigation
+						</h2>
+						<ul>
+							<li>
+								<a href="../">Overview</a>
+							</li>
+							<li>
+								<a href="../foundation">Foundation</a>
+							</li>
+							<li>
+								<a href="#top">Top of page</a>
+							</li>
+							<li>
+								<strong><font color="#000">Pools</font></strong><br>
+								<a href="http://mike.rs" target="_blank">Mikers Pool</a><br>
+								<a href="http://0xbtc.tosti.ro" target="_blank">Tosti Pool</a><br>
+								<a href="http://tokenminingpool.com/" target="_blank">Token Mining Pool</a><br>
+								<a href="http://0xbtc.pool.nocroom.com/" target="_blank">NOCROOM Pool</a><br>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="box box3">
+						<h2>
+							Exchanges
+						</h2>
+						<ul>
+							<li>
+								<strong><font color="#000">Decentralized</font></strong><br>
+								<a href="https://www.saturn.network/exchange/ETH/token/0xb6ed7644c69416d67b522e20bc294a9a9b405b31" target="_blank">Saturn.network</a>
+							</li>
+							<li>
+								<a href="https://ethex.market/#0xbtc" target="_blank">Ethex</a>
+							</li>
+							<li>
+								<a href="https://0xbitcoin.trade/" target="_blank">Uniswap</a>
+							</li>
+							<li>
+								<a href="https://enclaves.io/trade/0xBTC" target="_blank">Enclaves</a>
+							</li>
+							<li>
+								<a href="https://idex.market/eth/0xbtc" target="_blank">IDEX</a>
+							</li>
+							<li>
+								<a href="https://forkdelta.github.io/#!/trade/0xBTC-ETH" target="_blank">Forkdelta</a>
+							</li>
+							<li>
+								<strong><font color="#000">Centralized</font></strong><br>
+								<a href="https://mercatox.com/exchange/0xBTC/ETH" target="_blank">Mercatox</a>
+							</li>
+							<li><a href="https://www.coinexchange.io/market/0xBTC/BTC?r=14503e19" target="_blank">Coinexchange.io</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="box box3">
+						<h2>
+							Contact
+						</h2>
+						<ul>
+							<li>
+						<a href="mailto:info@0xbitcoin.foundation">
+
+							info@0xbitcoin.foundation
+						</a>
+					</li>
+					<li>
+						<a href="mailto:admin@0xbitcoin.org">
+
+							admin@0xbitcoin.org
+						</a>
+					</li>
+				</ul>
+						<a href="#">
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p align=center>
+
+
+			         <font color="#000"><strong>0xBitcoin</strong> Pure-mined ERC20 currency.</font>
+
+			          <br>
+			          The source code is licensed
+			         <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+			         is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+
+
+			   &copy; 2018 0xBitcoin.org
+			</p>
+		</div>
+	</footer>
+
+	<!-- Footer Area End -->
+
+
+
+
+	<!--Start ClickToTop-->
+
+<!--hide	<div class="totop">
+		<a href="#top" id="totop"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+hide-->
+	<!--End ClickToTop-->
+
+
+
+
+
+
+<script type="text/javascript" src="/main.49daa1832bc812d00d2b.js"></script></body>
