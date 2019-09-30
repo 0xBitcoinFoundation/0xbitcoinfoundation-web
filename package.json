@@ -25,6 +25,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "jquery": "^3.4.1",
     "js-sha3": "^0.7.0",
+    "node-gyp": "^5.0.4",
     "owl.carousel": "^2.2.0",
     "sha3": "^1.2.0",
     "slick-carousel": "^1.8.1",
